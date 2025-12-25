@@ -22,13 +22,14 @@ export default function ScrollReveal({children, delay = 0}) {
       }
     );
 
-    if (ref.current) {
-      observer.observe(ref.current);
+    const currentRef = ref.current;
+    if (currentRef) {
+      observer.observe(currentRef);
     }
 
     return () => {
-      if (ref.current) {
-        observer.unobserve(ref.current);
+      if (currentRef) {
+        observer.unobserve(currentRef);
       }
     };
   }, []);
@@ -36,11 +37,12 @@ export default function ScrollReveal({children, delay = 0}) {
   return (
     <div
       ref={ref}
-      className={`scroll-reveal ${isVisible ? "visible" : ""} ${hasBeenVisible ? "has-been-visible" : ""}`}
+      className={`scroll-reveal ${isVisible ? "visible" : ""} ${
+        hasBeenVisible ? "has-been-visible" : ""
+      }`}
       style={{transitionDelay: `${delay}ms`}}
     >
       {children}
     </div>
   );
 }
-

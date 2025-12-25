@@ -2,7 +2,6 @@ import React from "react";
 import "./ExperienceCard.scss";
 
 export default function ExperienceCard({cardInfo, isDark}) {
-
   const GetDescBullets = ({descBullets}) => {
     return descBullets
       ? descBullets.map((item, i) => (
@@ -26,15 +25,9 @@ export default function ExperienceCard({cardInfo, isDark}) {
           </div>
         )}
         <h5 className="experience-text-company">{cardInfo.company}</h5>
-        <h5 className="experience-text-role">
-          {cardInfo.role}
-        </h5>
-        <h5 className="experience-text-date">
-          {cardInfo.date}
-        </h5>
-        <p className="subTitle experience-text-desc">
-          {cardInfo.desc}
-        </p>
+        <h5 className="experience-text-role">{cardInfo.role}</h5>
+        <h5 className="experience-text-date">{cardInfo.date}</h5>
+        <p className="subTitle experience-text-desc">{cardInfo.desc}</p>
         <ul>
           <GetDescBullets descBullets={cardInfo.descBullets} />
         </ul>

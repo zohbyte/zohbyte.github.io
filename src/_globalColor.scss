@@ -8,7 +8,7 @@ $brandGradient: linear-gradient(135deg, $brandStart, $brandEnd);
 /* Buttons */
 $buttonColor: #000000;
 $buttonHover: #333333;
-$topButtonHover: rgba(0,0,0,0.6);
+$topButtonHover: rgba(0, 0, 0, 0.6);
 
 /* Text Colors */
 $titleColor: #f4f2ee;
@@ -52,13 +52,13 @@ $darkBoxShadow2: #ffffff;
 
 /* Gradients */
 $experienceCardBlurredDivLG: linear-gradient(
-    rgba(0, 0, 0, 0.4),
-    rgba(0, 0, 0, 0.2)
+  rgba(0, 0, 0, 0.4),
+  rgba(0, 0, 0, 0.2)
 );
 
 $experienceCardBannerLG: linear-gradient(
-    rgba(0,0,0,0.65),
-    rgba(0,0,0,0.45)
+  rgba(0, 0, 0, 0.65),
+  rgba(0, 0, 0, 0.45)
 );
 
 /* Borders */
@@ -67,9 +67,9 @@ $lightBorder1: rgba(50, 55, 57, 0.4);
 $educationCardBorder: $brandEnd;
 
 /* Hovers */
-$achievementCertificateCardHoverDark: rgba(255,255,255,0.1);
-$blogCardHoverSmallColor: rgba(255,255,255,0.15);
-$headerHoverBG: rgba(255,255,255,0.2);
+$achievementCertificateCardHoverDark: rgba(255, 255, 255, 0.1);
+$blogCardHoverSmallColor: rgba(255, 255, 255, 0.15);
+$headerHoverBG: rgba(255, 255, 255, 0.2);
 $contactDetailHoverTS: #916cbf;
 
 /* Misc */

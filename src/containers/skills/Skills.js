@@ -11,11 +11,9 @@ export default function Skills() {
   return (
     <ScrollReveal>
       <div className="main" id="skills">
-      <div className="skills-main-div">
+        <div className="skills-main-div">
           <div className="skills-text-div">
-            <h1 className="skills-heading">
-              {skillsSection.title}{" "}
-            </h1>
+            <h1 className="skills-heading">{skillsSection.title} </h1>
             <p className="subTitle skills-text-subtitle">
               {skillsSection.subTitle}
             </p>
@@ -30,9 +28,8 @@ export default function Skills() {
               })}
             </ul>
           </div>
-
+        </div>
       </div>
-    </div>
     </ScrollReveal>
   );
 }

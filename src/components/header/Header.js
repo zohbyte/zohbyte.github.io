@@ -29,11 +29,11 @@ function Header() {
         </label>
         <ul className="menu">
           <li>
-            <a 
-              href="#home" 
-              onClick={(e) => {
+            <a
+              href="#home"
+              onClick={e => {
                 e.preventDefault();
-                window.scrollTo({ top: 0, behavior: 'smooth' });
+                window.scrollTo({top: 0, behavior: "smooth"});
               }}
             >
               Home

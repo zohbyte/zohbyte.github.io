@@ -49,17 +49,29 @@ const skillsSection = {
   ],
 
   softwareSkills: [
-    { skillName: "Lua / Luau", fontAwesomeClassname: "fas fa-code" },
-    { skillName: "Python", fontAwesomeClassname: "fab fa-python" },
-    { skillName: "JavaScript (basic)", fontAwesomeClassname: "fab fa-js" },
-    { skillName: "Roblox Development", fontAwesomeClassname: "fas fa-hammer" },
-    { skillName: "Digital Forensics", fontAwesomeClassname: "fas fa-microscope" },
-    { skillName: "CTF / Offensive Security", fontAwesomeClassname: "fas fa-flag-checkered" },
-    { skillName: "Kali Linux", fontAwesomeClassname: "fas fa-terminal" },
-    { skillName: "Wireshark", fontAwesomeClassname: "fas fa-network-wired" },
-    { skillName: "Virtualization (VMware)", fontAwesomeClassname: "fas fa-server" },
-    { skillName: "Git / Version Control", fontAwesomeClassname: "fab fa-git-alt" },
-    { skillName: "Teaching & Leadership", fontAwesomeClassname: "fas fa-chalkboard-teacher" }
+    {skillName: "Lua / Luau", fontAwesomeClassname: "fas fa-code"},
+    {skillName: "Python", fontAwesomeClassname: "fab fa-python"},
+    {skillName: "JavaScript (basic)", fontAwesomeClassname: "fab fa-js"},
+    {skillName: "Roblox Development", fontAwesomeClassname: "fas fa-hammer"},
+    {skillName: "Digital Forensics", fontAwesomeClassname: "fas fa-microscope"},
+    {
+      skillName: "CTF / Offensive Security",
+      fontAwesomeClassname: "fas fa-flag-checkered"
+    },
+    {skillName: "Kali Linux", fontAwesomeClassname: "fas fa-terminal"},
+    {skillName: "Wireshark", fontAwesomeClassname: "fas fa-network-wired"},
+    {
+      skillName: "Virtualization (VMware)",
+      fontAwesomeClassname: "fas fa-server"
+    },
+    {
+      skillName: "Git / Version Control",
+      fontAwesomeClassname: "fab fa-git-alt"
+    },
+    {
+      skillName: "Teaching & Leadership",
+      fontAwesomeClassname: "fas fa-chalkboard-teacher"
+    }
   ],
 
   display: true
@@ -73,7 +85,8 @@ const educationInfo = {
     {
       schoolName: "University of Maine at Augusta",
       logo: require("./assets/images/uma.png"),
-      subHeader: "Bachelors of Science in Cybersecurity and Computer Informations Systems",
+      subHeader:
+        "Bachelors of Science in Cybersecurity and Computer Informations Systems",
       duration: "September 2022 - Present",
       desc: "Participated in the undergraduate research, taught cybersecurity labs, and ran the CTF team.",
       descBullets: [
@@ -81,7 +94,7 @@ const educationInfo = {
         "Taught Junior / Senior level cybersecurity labs as a Freshman",
         "Advised Maine Municipalites on cybersecurity and built live-attack demonstrations on virtual replicated infrastructures"
       ]
-    },
+    }
   ]
 };
 
@@ -95,7 +108,7 @@ const workExperiences = {
       company: "Broken Yolk Games",
       companylogo: require("./assets/images/brokenyolk.png"),
       date: "July 2025 – Present",
-      desc: "Oversee development across all studio projects while serving as the lead developer. Leverage deep experience with the Roblox platform and proficiency in Luau to create high-quality, scalable & engaging game experiences. Responsible for core system architecture, performance optimization, and deployment of live game environments.",
+      desc: "Oversee development across all studio projects while serving as the lead developer. Leverage deep experience with the Roblox platform and proficiency in Luau to create high-quality, scalable & engaging game experiences. Responsible for core system architecture, performance optimization, and deployment of live game environments."
     },
     {
       role: "Tech Hub Navigator",
@@ -111,8 +124,8 @@ const workExperiences = {
       date: "Jan 2025 – Present",
       desc: "I participate in cybersecurity competitions with my team, serving as a forensics specialist.",
       links: [
-        { text: "spl.team", url: "https://spl.team" },
-        { text: "CTFTime", url: "https://ctftime.org/team/222966" }
+        {text: "spl.team", url: "https://spl.team"},
+        {text: "CTFTime", url: "https://ctftime.org/team/222966"}
       ]
     },
     {
@@ -128,7 +141,7 @@ const workExperiences = {
       companylogo: require("./assets/images/cybermooselogo.png"),
       date: "Sep 2022 – Jan 2025",
       desc: "Originally joined as a player in the National Cyber League competitions, quickly advancing to team captain due to strong performance and leadership skills. Led the team to achieve a school-record 25th place nationally by coordinating practice sessions, developing strategies, and fostering collaboration among team members."
-    },
+    }
   ]
 };
 
@@ -137,8 +150,7 @@ const workExperiences = {
 
 const achievementSection = {
   title: emoji("Achievements "),
-  subtitle:
-    "",
+  subtitle: "",
 
   achievementsCards: [
     {
@@ -147,8 +159,7 @@ const achievementSection = {
         "I achieved second place in the Forensics category during the Spring 2025 National Cyber League competition, demonstrating exceptional skills in digital forensics.",
       image: require("./assets/images/ncl.png"),
       imageAlt: "National Cyber League Logo",
-      footerLink: [
-      ]
+      footerLink: []
     },
     {
       title: "Second Place Enumeration & Exploitation in National Cyber League",
@@ -156,8 +167,7 @@ const achievementSection = {
         "I achieved second place in the Enumeration & Exploitation category during the Fall 2025 National Cyber League competition, showcasing strong abilities in identifying and exploiting system vulnerabilities.",
       image: require("./assets/images/ncl.png"),
       imageAlt: "National Cyber League Logo",
-      footerLink: [
-      ]
+      footerLink: []
     },
     {
       title: "Diamond III in National Cyber League",
@@ -165,8 +175,7 @@ const achievementSection = {
         "Consistently maintained a Diamond I-III ranking in the National Cyber League competitions, showcasing advanced skills in cybersecurity and problem-solving.",
       image: require("./assets/images/ncl.png"),
       imageAlt: "National Cyber League Logo",
-      footerLink: [
-      ]
+      footerLink: []
     },
     {
       title: "US Cyber Games",
@@ -174,9 +183,8 @@ const achievementSection = {
         "I was selected for both the combine and pipeline programs of the US Cyber Games in Seasons IV & V, highlighting my dedication and skill in the field of cybersecurity.",
       image: require("./assets/images/uscg.png"),
       imageAlt: "US Cyber Games Logo",
-      footerLink: [
-      ]
-    },
+      footerLink: []
+    }
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -204,16 +212,19 @@ const isHireable = true; // Set false if you are not looking for a job. Also isH
 const robloxGameSection = {
   title: "[Alpha] Squid Game with NPCs",
   subtitle: "My Most Popular Roblox Game",
-  description: "An immersive Roblox experience featuring the classic Squid Game challenges with AI-driven NPCs. Lead development and design for this popular game that has attracted thousands of players.",
+  description:
+    "An immersive Roblox experience featuring the classic Squid Game challenges with AI-driven NPCs. Lead development and design for this popular game that has attracted thousands of players.",
   gameUrl: "https://www.roblox.com/games/101390204205517/Squid-Game-with-NPCs",
   universeId: 7276011284, // Universe ID for API stats fetching
   placeId: 101390204205517, // Place ID
   projects: [
     {
       title: "[Alpha] Squid Game with NPCs",
-      description: "An immersive Roblox experience featuring the classic Squid Game challenges with AI-driven NPCs. Lead development and design for this popular game that has attracted thousands of players.",
+      description:
+        "An immersive Roblox experience featuring the classic Squid Game challenges with AI-driven NPCs. Lead development and design for this popular game that has attracted thousands of players.",
       thumbnail: require("./assets/images/squidthumbnail.png"),
-      gameUrl: "https://www.roblox.com/games/101390204205517/Squid-Game-with-NPCs"
+      gameUrl:
+        "https://www.roblox.com/games/101390204205517/Squid-Game-with-NPCs"
     }
     // Add more projects here for carousel/multiple games
   ],

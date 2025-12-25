@@ -10,7 +10,13 @@ import ScrollToTopButton from "./topbutton/Top";
 import Profile from "./profile/Profile";
 import Divider from "../components/divider/Divider";
 import RobloxGame from "./robloxGame/RobloxGame";
-import {skillsSection, educationInfo, workExperiences, achievementSection, robloxGameSection} from "../portfolio";
+import {
+  skillsSection,
+  educationInfo,
+  workExperiences,
+  achievementSection,
+  robloxGameSection
+} from "../portfolio";
 import {StyleProvider} from "../contexts/StyleContext";
 import "./Main.scss";
 

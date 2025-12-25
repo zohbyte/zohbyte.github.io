@@ -10,7 +10,9 @@ export default function RobloxGame() {
   useEffect(() => {
     // Fetch game stats from Roblox API if universeId is available
     if (robloxGameSection.universeId) {
-      fetch(`https://games.roblox.com/v1/games?universeIds=${robloxGameSection.universeId}`)
+      fetch(
+        `https://games.roblox.com/v1/games?universeIds=${robloxGameSection.universeId}`
+      )
         .then(response => response.json())
         .then(data => {
           if (data.data && data.data.length > 0) {
@@ -33,13 +35,15 @@ export default function RobloxGame() {
     return null;
   }
 
-  const projects = robloxGameSection.projects || [{
-    title: robloxGameSection.title,
-    description: robloxGameSection.description,
-    thumbnail: require("../../assets/images/squidthumbnail.png"),
-    gameUrl: robloxGameSection.gameUrl,
-    stats: gameStats
-  }];
+  const projects = robloxGameSection.projects || [
+    {
+      title: robloxGameSection.title,
+      description: robloxGameSection.description,
+      thumbnail: require("../../assets/images/squidthumbnail.png"),
+      gameUrl: robloxGameSection.gameUrl,
+      stats: gameStats
+    }
+  ];
 
   return (
     <ScrollReveal>
@@ -65,4 +69,3 @@ export default function RobloxGame() {
     </ScrollReveal>
   );
 }
-

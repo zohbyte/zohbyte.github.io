@@ -22,25 +22,28 @@ export default function ProjectCard({projectInfo}) {
             <div className="project-stats">
               {projectInfo.stats.visits && (
                 <span className="project-stat">
-                  <i className="fas fa-eye"></i> {projectInfo.stats.visits.toLocaleString()} Visits
+                  <i className="fas fa-eye"></i>{" "}
+                  {projectInfo.stats.visits.toLocaleString()} Visits
                 </span>
               )}
               {projectInfo.stats.favorites && (
                 <span className="project-stat">
-                  <i className="fas fa-heart"></i> {projectInfo.stats.favorites.toLocaleString()} Favorites
+                  <i className="fas fa-heart"></i>{" "}
+                  {projectInfo.stats.favorites.toLocaleString()} Favorites
                 </span>
               )}
               {projectInfo.stats.playing && (
                 <span className="project-stat">
-                  <i className="fas fa-users"></i> {projectInfo.stats.playing.toLocaleString()} Playing
+                  <i className="fas fa-users"></i>{" "}
+                  {projectInfo.stats.playing.toLocaleString()} Playing
                 </span>
               )}
             </div>
           )}
           <div className="project-button-div">
-            <Button 
-              text="Play on Roblox" 
-              className="project-play-button" 
+            <Button
+              text="Play on Roblox"
+              className="project-play-button"
               href={projectInfo.gameUrl}
               newTab={true}
             />
@@ -50,4 +53,3 @@ export default function ProjectCard({projectInfo}) {
     </div>
   );
 }
-

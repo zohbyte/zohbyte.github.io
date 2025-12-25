@@ -24,8 +24,5 @@ export default function Top() {
     scrollFunction();
   }; //To make sure that this button is not visible at starting.
   // When the user clicks on the button, scroll to the top of the document
-  return (
-    <button onClick={TopEvent} id="topButton" title="Go to top">
-    </button>
-  );
+  return <button onClick={TopEvent} id="topButton" title="Go to top"></button>;
 }

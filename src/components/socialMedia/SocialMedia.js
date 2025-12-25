@@ -27,9 +27,9 @@ export default function socialMedia() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img 
-            src={require("../../assets/images/roblox-icon.png")} 
-            alt="Roblox" 
+          <img
+            src={require("../../assets/images/roblox-icon.png")}
+            alt="Roblox"
             className="icon-img"
           />
           <span></span>

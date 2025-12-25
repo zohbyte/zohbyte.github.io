@@ -23,12 +23,8 @@ export default function AchievementCard({cardInfo, isDark}) {
         </div>
       )}
       <div className="certificate-detail-div">
-        <h5 className="card-title">
-          {cardInfo.title}
-        </h5>
-        <p className="card-subtitle">
-          {cardInfo.description}
-        </p>
+        <h5 className="card-title">{cardInfo.title}</h5>
+        <p className="card-subtitle">{cardInfo.description}</p>
       </div>
       {cardInfo.footer && cardInfo.footer.length > 0 && (
         <div className="certificate-card-footer">

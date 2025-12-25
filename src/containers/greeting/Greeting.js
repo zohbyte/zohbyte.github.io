@@ -15,27 +15,23 @@ export default function Greeting() {
         <div className="greeting-main">
           <div className="greeting-text-div">
             <div>
-              <h1 className="greeting-text">
-                Hi, I'm Zoey!
-              </h1>
-              <a 
-                href="https://en.pronouns.page/@zohbyte" 
-                target="_blank" 
+              <h1 className="greeting-text">Hi, I'm Zoey!</h1>
+              <a
+                href="https://en.pronouns.page/@zohbyte"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="greeting-pronouns"
               >
                 (she/her)
               </a>
-              <p className="greeting-text-p subTitle">
-                {greeting.subTitle}
-              </p>
+              <p className="greeting-text-p subTitle">{greeting.subTitle}</p>
               <div id="resume" className="empty-div"></div>
               <SocialMedia />
               <div className="button-greeting-div">
                 <Button text="Contact me" href="#contact" />
                 {greeting.resumeLink && (
-                  <Button 
-                    text="View my resume" 
+                  <Button
+                    text="View my resume"
                     href={greeting.resumeLink}
                     newTab={true}
                   />
