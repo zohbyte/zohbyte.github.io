@@ -1,8 +1,8 @@
-/* Global Theme Colors — Gradient Purple Brand */
+/* Global Theme Colors — Dark Mode (Based on Dark Reader) */
 
 /* ---- Brand Gradient ---- */
-$brandStart: #7851a9;
-$brandEnd: #b796ff;
+$brandStart: #65448f;
+$brandEnd: #260078;
 $brandGradient: linear-gradient(135deg, $brandStart, $brandEnd);
 
 /* Buttons */
@@ -11,15 +11,15 @@ $buttonHover: #333333;
 $topButtonHover: rgba(0,0,0,0.6);
 
 /* Text Colors */
-$titleColor: #1a102b;
-$textColor: #2b1b46;
-$subTitle: #5c4f77;
-$cardSubtitle: #564d6d;
-$talkCardSubTitle: #6b5f88;
-$blogCardTitleColor: #2e2540;
+$titleColor: #f4f2ee;
+$textColor: #f4f2ee;
+$subTitle: #d4cfc8;
+$cardSubtitle: #d4cfc8;
+$talkCardSubTitle: #d4cfc8;
+$blogCardTitleColor: #f4f2ee;
 
 /* Dark Mode */
-$textColorDark: #ffffff;
+$textColorDark: #f4f2ee;
 
 /* Toggles */
 $toggleCheck: $brandEnd;
@@ -33,14 +33,14 @@ $githubRepoCardRepoNameColor: #3a2c57;
 $githubProfileCardLocationTS: #e5d8ff;
 $githubProfileCardBorder: $brandEnd;
 
-/* Light Backgrounds */
-$lightBackground1: #ffffff;
-$lightBackground2: #faf7ff;
-$lightBackground3: #f2ebff;
-$blogCardContainerColor: #5e4f80;
+/* Light Backgrounds (Dark Mode) */
+$lightBackground1: #191b1c;
+$lightBackground2: #1b1d20;
+$lightBackground3: #202223;
+$blogCardContainerColor: #1b1d20;
 
 /* Dark Background */
-$darkBackground: #171c28;
+$darkBackground: #191b1c;
 
 /* Shadows */
 $lightBoxShadowDark: rgba(0, 0, 0, 0.15);
@@ -62,20 +62,20 @@ $experienceCardBannerLG: linear-gradient(
 );
 
 /* Borders */
-$progressBarBackground: #ece7ff;
-$lightBorder1: rgba(200, 180, 255, 0.4);
+$progressBarBackground: #2c2f31;
+$lightBorder1: rgba(50, 55, 57, 0.4);
 $educationCardBorder: $brandEnd;
 
 /* Hovers */
-$achievementCertificateCardHoverDark: rgba(255,255,255,0.3);
-$blogCardHoverSmallColor: rgba(255,255,255,0.85);
-$headerHoverBG: #eee6ff;
-$contactDetailHoverTS: #cfc3ff;
+$achievementCertificateCardHoverDark: rgba(255,255,255,0.1);
+$blogCardHoverSmallColor: rgba(255,255,255,0.15);
+$headerHoverBG: rgba(255,255,255,0.2);
+$contactDetailHoverTS: #916cbf;
 
 /* Misc */
 $progressBarSpanBG: $brandEnd;
-$iconBackground: #2d203f;
-$appHeaderBG: #21162f;
+$iconBackground: #1b1d20;
+$appHeaderBG: #191b1c;
 
 /* Skill Tags, Links */
 $skillsColor: $brandStart;
