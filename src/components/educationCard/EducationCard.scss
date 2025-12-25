@@ -38,6 +38,7 @@
   overflow: hidden;
   white-space: nowrap;
   height: 27px;
+  color: $textColor;
 }
 
 .education-roundedimg {
@@ -70,6 +71,7 @@
 .education-text-desc {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
+  color: $subTitle;
 }
 
 .education-text-bullets > ul {
