@@ -40,6 +40,10 @@
   display: flex;
   margin-top: 1.5rem;
   gap: 1rem;
+  
+  .main-button {
+    margin-right: 0 !important;
+  }
 }
 .download-link-button {
   text-decoration: none;
