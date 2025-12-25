@@ -16,7 +16,15 @@ export default function Footer() {
           >
             developerFolio
           </a>
-          {" • "}Modified by zohbyte
+          {" • "}Modified by{" "}
+          <a
+            href="https://github.com/zohbyte/zohbyte.github.io"
+            target="_blank"
+            rel="noreferrer"
+            className="footer-link"
+          >
+            zohbyte
+          </a>
         </p>
       </div>
     </Fade>
