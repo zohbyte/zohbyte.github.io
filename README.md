@@ -15,25 +15,79 @@ This portfolio is a modified version of [developerFolio](https://github.com/saad
 
 ## Modifications
 
-This is a modified version of developerFolio. The following changes have been made:
+This is a modified version of developerFolio. The following comprehensive changes have been made:
 
-### Customizations
-- **Custom Domain**: Configured for `zohbyte.dev` with CNAME support
-- **Contact Information**: Updated to use `contact@zohbyte.dev`
+### Removed Features
+- **Dark Mode**: Completely removed dark mode toggle and theme switching functionality
+- **Blogs Section**: Removed blog posts integration and display
+- **Talks Section**: Removed talks/presentations section
+- **Podcast Section**: Removed podcast integration
+- **Twitter Embed**: Removed Twitter timeline integration
+- **GitHub Integration**: Removed GitHub profile cards and repository cards
+- **Projects Sections**: Removed both Projects and StartupProjects sections
+- **Skill Progress Bars**: Removed animated skill progress indicators
+- **Splash Screen**: Removed animated splash screen on page load
+- **Loading Screen**: Removed loading animation component
+- **Lottie Animations**: Removed all Lottie animation components and assets
+- **Resume PDF**: Removed embedded resume PDF file
+
+### Added Features
+- **Roblox Game Section**: New custom section for showcasing Roblox game projects with live stats
+- **ScrollReveal Component**: Custom scroll-triggered reveal animations for sections
+- **Divider Component**: Visual dividers between sections
+- **ProjectCard Component**: Custom project card component (different from original Projects)
+- **Custom Domain Support**: Added CNAME file for `zohbyte.dev` custom domain
+- **GitHub Actions Workflows**: Added automated deployment and formatting checks
+- **DEPLOYMENT.md**: Added deployment documentation
+
+### Modified Components
 - **Experience Cards**: 
-  - Fixed alignment issues with logos and text
-  - Added uniform card layout with consistent spacing
-  - Fixed text overflow and wrapping issues
+  - Complete redesign with uniform card layout
+  - Fixed logo and text alignment issues
+  - Fixed text overflow and wrapping problems
   - Added support for clickable links in experience entries
-- **Button Spacing**: Adjusted spacing between contact and resume buttons
-- **Styling**: Customized color scheme and visual design
-- **Content**: Personalized all portfolio content for Zoey Linardos
+  - Improved responsive design
+- **Header**: Simplified navigation, removed dark mode toggle
+- **Greeting Section**: 
+  - Updated with pronouns link
+  - Adjusted button spacing
+  - Removed resume PDF download
+- **Skills Section**: Simplified display, removed progress bars
+- **Social Media**: Enhanced styling and layout
+- **Footer**: Simplified design
+- **Contact Section**: Removed unused imports, simplified layout
+- **Education Cards**: Minor styling improvements
+- **Achievement Cards**: Styling updates
+
+### Structural Changes
+- **Main.js**: Completely restructured - removed dark mode logic, splash screen, and multiple sections
+- **App.js**: Simplified (unchanged but context differs)
+- **Portfolio Data**: Completely personalized with Zoey's information, removed unused sections
+- **Package.json**: 
+  - Changed homepage to `zohbyte.github.io`
+  - Changed name to "Modified developerFolio"
+  - Updated deploy script
+- **Styling**: 
+  - Customized global color scheme in `_globalColor.scss`
+  - Updated all component styles to match new design
+  - Removed dark mode color variables usage
 
 ### Technical Changes
-- **GitHub Actions**: Updated workflows to use Node.js 20.x
-- **Deployment**: Fixed GitHub Pages deployment configuration
-- **Code Quality**: Applied Prettier formatting and fixed linting issues
-- **Dependencies**: Updated and maintained project dependencies
+- **GitHub Actions**: 
+  - Updated workflows to use Node.js 20.x
+  - Fixed deployment action configuration
+  - Added Prettier format checking workflow
+- **Deployment**: 
+  - Fixed GitHub Pages deployment configuration
+  - Added proper permissions for workflow
+- **Code Quality**: 
+  - Applied Prettier formatting across all files
+  - Fixed ESLint warnings and errors
+  - Fixed React hooks dependencies
+- **Assets**: 
+  - Replaced all images with personal assets
+  - Removed unused Lottie animation files
+  - Added custom images (zoey.png, project thumbnails, logos)
 
 ## Getting Started
 
@@ -73,7 +127,7 @@ The site is available at:
 - **Custom Domain**: [https://zohbyte.dev](https://zohbyte.dev)
 - **GitHub Pages**: [https://zohbyte.github.io](https://zohbyte.github.io)
 
-## Technologies Used
+## Technologies Used 
 
 - React
 - SCSS
