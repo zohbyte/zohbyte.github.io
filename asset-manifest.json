@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.fe6495cf.css",
-    "main.js": "/static/js/main.831ac14d.js",
+    "main.css": "/static/css/main.dd40fd35.css",
+    "main.js": "/static/js/main.06e6ab5b.js",
     "static/media/zoey.png": "/static/media/zoey.e770c8463bece6ffed32.png",
     "static/media/cybermooselogo.png": "/static/media/cybermooselogo.942bd675d0d5de16980c.png",
     "static/media/Montserrat-Regular.ttf": "/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
@@ -13,11 +13,11 @@
     "static/media/spl.png": "/static/media/spl.a50c04b360dabf309f14.png",
     "static/media/roblox-icon.png": "/static/media/roblox-icon.1b3a3d1270739e67333c.png",
     "index.html": "/index.html",
-    "main.fe6495cf.css.map": "/static/css/main.fe6495cf.css.map",
-    "main.831ac14d.js.map": "/static/js/main.831ac14d.js.map"
+    "main.dd40fd35.css.map": "/static/css/main.dd40fd35.css.map",
+    "main.06e6ab5b.js.map": "/static/js/main.06e6ab5b.js.map"
   },
   "entrypoints": [
-    "static/css/main.fe6495cf.css",
-    "static/js/main.831ac14d.js"
+    "static/css/main.dd40fd35.css",
+    "static/js/main.06e6ab5b.js"
   ]
 }
