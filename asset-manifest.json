@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.a295626a.css",
+    "main.css": "/static/css/main.fe6495cf.css",
     "main.js": "/static/js/main.831ac14d.js",
     "static/media/zoey.png": "/static/media/zoey.e770c8463bece6ffed32.png",
     "static/media/cybermooselogo.png": "/static/media/cybermooselogo.942bd675d0d5de16980c.png",
@@ -13,11 +13,11 @@
     "static/media/spl.png": "/static/media/spl.a50c04b360dabf309f14.png",
     "static/media/roblox-icon.png": "/static/media/roblox-icon.1b3a3d1270739e67333c.png",
     "index.html": "/index.html",
-    "main.a295626a.css.map": "/static/css/main.a295626a.css.map",
+    "main.fe6495cf.css.map": "/static/css/main.fe6495cf.css.map",
     "main.831ac14d.js.map": "/static/js/main.831ac14d.js.map"
   },
   "entrypoints": [
-    "static/css/main.a295626a.css",
+    "static/css/main.fe6495cf.css",
     "static/js/main.831ac14d.js"
   ]
 }
