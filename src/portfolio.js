@@ -109,7 +109,11 @@ const workExperiences = {
       company: "Squid Proxy Lovers",
       companylogo: require("./assets/images/spl.png"),
       date: "Jan 2025 – Present",
-      desc: "I participate in cybersecurity competitions with my team, serving as a forensics specialist. \n https://spl.team \n https://ctftime.org/team/222966"
+      desc: "I participate in cybersecurity competitions with my team, serving as a forensics specialist.",
+      links: [
+        { text: "spl.team", url: "https://spl.team" },
+        { text: "CTFTime", url: "https://ctftime.org/team/222966" }
+      ]
     },
     {
       role: "Student Researcher & Lab Instructor",
