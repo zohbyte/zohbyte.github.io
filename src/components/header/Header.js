@@ -1,36 +1,23 @@
-import React, {useContext} from "react";
+import React from "react";
 import Headroom from "react-headroom";
 import "./Header.scss";
-import ToggleSwitch from "../ToggleSwitch/ToggleSwitch";
-import StyleContext from "../../contexts/StyleContext";
 import {
   greeting,
   workExperiences,
   skillsSection,
-  openSource,
-  blogSection,
-  talkSection,
-  achievementSection,
-  resumeSection
+  achievementSection
 } from "../../portfolio";
 
 function Header() {
-  const {isDark} = useContext(StyleContext);
   const viewExperience = workExperiences.display;
-  const viewOpenSource = openSource.display;
   const viewSkills = skillsSection.display;
   const viewAchievement = achievementSection.display;
-  const viewBlog = blogSection.display;
-  const viewTalks = talkSection.display;
-  const viewResume = resumeSection.display;
 
   return (
     <Headroom>
-      <header className={isDark ? "dark-menu header" : "header"}>
+      <header className="header">
         <a href="/" className="logo">
-          <span className="grey-color"> &lt;</span>
-          <span className="logo-name">{greeting.username}</span>
-          <span className="grey-color">/&gt;</span>
+          <span className="logo-terminal">{greeting.username}</span>
         </a>
         <input className="menu-btn" type="checkbox" id="menu-btn" />
         <label
@@ -38,9 +25,20 @@ function Header() {
           htmlFor="menu-btn"
           style={{color: "white"}}
         >
-          <span className={isDark ? "navicon navicon-dark" : "navicon"}></span>
+          <span className="navicon"></span>
         </label>
-        <ul className={isDark ? "dark-menu menu" : "menu"}>
+        <ul className="menu">
+          <li>
+            <a 
+              href="#home" 
+              onClick={(e) => {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+              }}
+            >
+              Home
+            </a>
+          </li>
           {viewSkills && (
             <li>
               <a href="#skills">Skills</a>
@@ -48,42 +46,19 @@ function Header() {
           )}
           {viewExperience && (
             <li>
-              <a href="#experience">Work Experiences</a>
+              <a href="#experience">Experience</a>
             </li>
           )}
-          {viewOpenSource && (
-            <li>
-              <a href="#opensource">Open Source</a>
-            </li>
-          )}
+          <li>
+            <a href="#projects">Projects</a>
+          </li>
           {viewAchievement && (
             <li>
               <a href="#achievements">Achievements</a>
             </li>
           )}
-          {viewBlog && (
-            <li>
-              <a href="#blogs">Blogs</a>
-            </li>
-          )}
-          {viewTalks && (
-            <li>
-              <a href="#talks">Talks</a>
-            </li>
-          )}
-          {viewResume && (
-            <li>
-              <a href="#resume">Resume</a>
-            </li>
-          )}
           <li>
             <a href="#contact">Contact Me</a>
-          </li>
-          <li>
-            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-            <a>
-              <ToggleSwitch />
-            </a>
           </li>
         </ul>
       </header>

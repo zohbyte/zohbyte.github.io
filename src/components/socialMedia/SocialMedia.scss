@@ -1,90 +1,149 @@
 @import "../../_globalColor";
 
 .social-media-div {
-  font-size: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 0.5rem;
 }
 
 .icon-button {
-  margin-bottom: 10px;
+  background-color: transparent;
+  border-radius: 50%;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.6rem;
+  width: 2.6rem;
+  min-width: 2.6rem;
+  min-height: 2.6rem;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  transition: 0.2s ease-in;
+  flex-shrink: 0;
+  text-decoration: none;
+  border: none;
+  outline: none;
 }
 
 .icon-button i {
-  color: $textColorDark;
-  border-radius: 2.6rem;
-  cursor: pointer;
-  display: inline-block;
+  color: white;
   font-size: 1.3rem;
-  height: 2.6rem;
-  line-height: 2.6rem;
-  margin: 0 5px;
-  position: relative;
-  text-align: center;
+  line-height: 1;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  width: 2.6rem;
-  margin-bottom: 10px;
-  transition: 0.2s ease-in;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
 }
 
-.facebook i {
+.icon-img {
+  width: 1.3rem;
+  height: 1.3rem;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+  z-index: 1;
+  display: block;
+  margin: auto;
+}
+
+.contact-text-div .social-media-div {
+  margin-top: 2rem;
+}
+
+.contact-text-div .icon-button {
+  height: 4rem;
+  width: 4rem;
+  min-width: 4rem;
+  min-height: 4rem;
+}
+
+.contact-text-div .icon-button i {
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.contact-text-div .icon-img {
+  width: 2rem;
+  height: 2rem;
+}
+
+.facebook {
   background-color: $faceBook;
 }
 
-.linkedin i {
+.linkedin {
   background-color: $linkedin;
 }
 
-.github i {
+.github {
   background-color: $github;
 }
 
-.gitlab i {
+.gitlab {
   background-color: $gitlab;
 }
 
-.google i {
+.google {
   background-color: $google;
 }
 
-.twitter i {
+.twitter {
   background-color: $twitter;
 }
 
-.medium i {
+.medium {
   background-color: $medium;
 }
 
-.stack-overflow i {
+.stack-overflow {
   background-color: $stackoverflow;
 }
 
-.kaggle i {
+.kaggle {
   background-color: $kaggle;
 }
 
-.instagram i {
+.roblox {
+  background-color: $roblox;
+}
+
+.discord {
+  background-color: $discord;
+}
+
+.instagram {
   background-color: $instagram;
 }
 
 /* Hover Transition */
-.twitter i:hover,
-.google i:hover,
-.gitlab i:hover,
-.github i:hover,
-.linkedin i:hover,
-.facebook i:hover,
-.instagram i:hover,
-.stack-overflow i:hover,
-.kaggle i:hover,
-.medium i:hover {
+.twitter:hover,
+.google:hover,
+.gitlab:hover,
+.github:hover,
+.linkedin:hover,
+.facebook:hover,
+.instagram:hover,
+.stack-overflow:hover,
+.kaggle:hover,
+.roblox:hover,
+.discord:hover,
+.medium:hover {
   background-color: $textColor;
+  transform: translateY(-3px);
 }
 
 /* Media Query */
 @media (max-width: 768px) {
   .social-media-div {
-    text-align: center;
+    justify-content: center;
   }
 }

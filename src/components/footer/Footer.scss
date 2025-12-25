@@ -2,11 +2,19 @@
 
 .footer-text {
   text-align: center;
-  color: $subTitle !important;
+  color: #ffffff !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  margin: 0.5rem 0;
 }
 
-.dark-mode {
-  color: $textColorDark !important;
+.footer-link {
+  color: #ffffff;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.footer-link:hover {
+  opacity: 0.8;
 }
 
 .footer-div {

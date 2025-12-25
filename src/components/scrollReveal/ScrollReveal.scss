@@ -1,0 +1,16 @@
+.scroll-reveal {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.scroll-reveal.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.scroll-reveal.has-been-visible:not(.visible) {
+  opacity: 0;
+  transform: translateX(-50px);
+}
+

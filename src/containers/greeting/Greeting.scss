@@ -4,13 +4,15 @@
   width: 90%;
   padding: 20px 10px;
   margin: 0px auto;
-  margin-top: 4rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 .greet-main {
   width: 90%;
   padding: 20px 10px;
   margin: 0px auto;
-  margin-top: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .greeting-main {
@@ -31,69 +33,73 @@
 }
 
 .empty-div {
-  margin-bottom: 40px;
+  margin-bottom: 1rem;
 }
 
 .button-greeting-div {
   display: flex;
-  margin-top: 40px;
+  margin-top: 1.5rem;
+  gap: 1rem;
 }
 .download-link-button {
   text-decoration: none;
 }
 
 .greeting-text {
-  font-size: 70px;
+  font-size: 56px;
   line-height: 1.1;
-  color: $textColor !important;
+  color: #ffffff !important;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  margin-bottom: 0;
 }
 
 .greeting-text-p {
-  font-size: 30px;
-  line-height: 40px;
+  font-size: 24px;
+  line-height: 32px;
+  color: #ffffff;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  margin-top: 1rem;
+}
+
+.greeting-image-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .greeting-image-div > img {
-  max-width: 100%;
+  max-width: 400px;
+  max-height: 400px;
+  width: auto;
   height: auto;
+  object-fit: contain;
 }
 
-.wave-emoji {
-  animation-duration: 1.8s;
-  animation-iteration-count: infinite;
-  animation-name: wave;
-  display: inline-block;
-  transform-origin: 70% 70%;
+.greeting-pronouns {
+  font-size: 24px;
+  line-height: 1.2;
+  color: #ffffff;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  margin-top: 0;
+  margin-bottom: 0;
+  font-style: italic;
+  text-decoration: none;
+  display: block;
+  transition: opacity 0.2s ease;
 }
 
-@keyframes wave {
-  0% {
-    transform: rotate(0deg);
-  }
-  10% {
-    transform: rotate(-10deg);
-  }
-  20% {
-    transform: rotate(12deg);
-  }
-  30% {
-    transform: rotate(-10deg);
-  }
-  40% {
-    transform: rotate(9deg);
-  }
-  50% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
+.greeting-pronouns:hover {
+  opacity: 0.8;
+  text-decoration: underline;
 }
 
 /* Media Query */
 @media (max-width: 1380px) {
   .greeting-text {
     font-size: 50px;
+  }
+  .greeting-pronouns {
+    font-size: 20px;
   }
   .greeting-text-p {
     font-size: 20px;
@@ -107,6 +113,10 @@
     font-size: 30px;
     text-align: center;
   }
+  .greeting-pronouns {
+    font-size: 18px;
+    text-align: center;
+  }
   .greeting-text-p {
     font-size: 16px;
     line-height: normal;
@@ -115,8 +125,9 @@
   .greeting-main {
     display: block;
   }
-  .greeting-image-div {
-    height: 256px;
+  .greeting-image-div > img {
+    max-width: 300px;
+    max-height: 300px;
   }
 }
 

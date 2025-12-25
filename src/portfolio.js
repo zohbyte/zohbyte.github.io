@@ -3,43 +3,32 @@
 // To change portfolio colors globally go to the  _globalColor.scss file
 
 import emoji from "react-easy-emoji";
-import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
-
-// Splash Screen
-
-const splashScreen = {
-  enabled: true, // set false to disable splash screen
-  animation: splashAnimation,
-  duration: 2000 // Set animation duration as per your animation
-};
 
 // Summary And Greeting Section
 
-const illustration = {
-  animated: true // Set to false to use static SVG
-};
-
 const greeting = {
-  username: "Saad Pasta",
-  title: "Hi all, I'm Saad",
+  username: "zohbyte",
+  title: "Hi, I'm Zoey! \n (she/her)",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
+    "I am a cybersecurity enthusiast and a self-taught game developer. I love working on miscellaneous projects that force me to expand upon my skills. I also participate in the competitive side of cybersecurity, my main focus is Forensics."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
+    "https://drive.google.com/file/d/1sWV6hRfurm45AMGlGNHTfor7PZanBtFj/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
 // Social Media Links
 
 const socialMediaLinks = {
-  github: "https://github.com/saadpasta",
-  linkedin: "https://www.linkedin.com/in/saadpasta/",
-  gmail: "saadpasta70@gmail.com",
-  gitlab: "https://gitlab.com/saadpasta",
-  facebook: "https://www.facebook.com/saad.pasta7",
-  medium: "https://medium.com/@saadpasta",
-  stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
+  github: "https://github.com/zohbyte",
+  linkedin: "https://www.linkedin.com/in/yolked/",
+  gmail: "zoeylinardos@gmail.com",
+  discord: "https://discord.com/users/727645538190753863",
+  roblox: "https://www.roblox.com/users/354594269/profile",
+  // gitlab: "https://gitlab.com/saadpasta",
+  // facebook: "https://www.facebook.com/saad.pasta7",
+  // medium: "https://medium.com/@saadpasta",
+  // stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
@@ -48,76 +37,32 @@ const socialMediaLinks = {
 // Skills Section
 
 const skillsSection = {
-  title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  title: "Skills",
+  subTitle: "Cybersecurity • Digital Forensics • Game & Software Development",
   skills: [
-    emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
-    ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
-    emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
-    )
+    "Build scalable Roblox/Luau game systems supporting thousands of concurrent players",
+    "Perform digital forensics and incident response including memory, network, and disk analysis",
+    "Develop secure scripts, automation tools, and backend services in Lua + Python",
+    "Create simulated cyber range environments and teach advanced cybersecurity concepts",
+    "Penetration testing, network enumeration, exploitation, and CTF problem solving",
+    "IT troubleshooting, virtualization management, and student technical support"
   ],
-
-  /* Make Sure to include correct Font Awesome Classname to view your icon
-https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
-    {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
-    },
-    {
-      skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt"
-    },
-    {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass"
-    },
-    {
-      skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js"
-    },
-    {
-      skillName: "reactjs",
-      fontAwesomeClassname: "fab fa-react"
-    },
-    {
-      skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node"
-    },
-    {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
-    },
-    {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
-    },
-    {
-      skillName: "sql-database",
-      fontAwesomeClassname: "fas fa-database"
-    },
-    {
-      skillName: "aws",
-      fontAwesomeClassname: "fab fa-aws"
-    },
-    {
-      skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire"
-    },
-    {
-      skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
-    },
-    {
-      skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker"
-    }
+    { skillName: "Lua / Luau", fontAwesomeClassname: "fas fa-code" },
+    { skillName: "Python", fontAwesomeClassname: "fab fa-python" },
+    { skillName: "JavaScript (basic)", fontAwesomeClassname: "fab fa-js" },
+    { skillName: "Roblox Development", fontAwesomeClassname: "fas fa-cube" },
+    { skillName: "Digital Forensics", fontAwesomeClassname: "fas fa-microscope" },
+    { skillName: "CTF / Offensive Security", fontAwesomeClassname: "fas fa-flag-checkered" },
+    { skillName: "Kali Linux", fontAwesomeClassname: "fas fa-terminal" },
+    { skillName: "Wireshark", fontAwesomeClassname: "fas fa-network-wired" },
+    { skillName: "Virtualization (VMware)", fontAwesomeClassname: "fas fa-server" },
+    { skillName: "Git / Version Control", fontAwesomeClassname: "fab fa-git-alt" },
+    { skillName: "Teaching & Leadership", fontAwesomeClassname: "fas fa-chalkboard-teacher" }
   ],
-  display: true // Set false to hide this section, defaults to true
+
+  display: true
 };
 
 // Education Section
@@ -126,46 +71,18 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "Harvard University",
-      logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
-      desc: "Participated in the research of XXX and published 3 papers.",
+      schoolName: "University of Maine at Augusta",
+      logo: require("./assets/images/uma.png"),
+      subHeader: "Bachelors of Science in Cybersecurity and Computer Informations Systems",
+      duration: "September 2022 - Present",
+      desc: "Participated in the undergraduate research, taught cybersecurity labs, and ran the CTF team.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Led a CTF team to 25th in the National Cyber League (School Record)",
+        "Taught Junior / Senior level cybersecurity labs as a Freshman",
+        "Advised Maine Municipalites on cybersecurity and built live-attack demonstrations on virtual replicated infrastructures"
       ]
     },
-    {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
-    }
   ]
-};
-
-// Your top 3 proficient stacks/tech experience
-
-const techStack = {
-  viewSkillBars: true, //Set it to true to show Proficiency Section
-  experience: [
-    {
-      Stack: "Frontend/Design", //Insert stack or technology you have experience in
-      progressPercentage: "90%" //Insert relative proficiency in percentage
-    },
-    {
-      Stack: "Backend",
-      progressPercentage: "70%"
-    },
-    {
-      Stack: "Programming",
-      progressPercentage: "60%"
-    }
-  ],
-  displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
 };
 
 // Work experience section
@@ -174,187 +91,88 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      ]
+      role: "Technical Lead / Owner",
+      company: "Broken Yolk Games",
+      companylogo: require("./assets/images/brokenyolk.png"),
+      date: "July 2025 – Present",
+      desc: "Oversee development across all studio projects while serving as the lead developer. Leverage deep experience with the Roblox platform and proficiency in Luau to create high-quality, scalable & engaging game experiences. Responsible for core system architecture, performance optimization, and deployment of live game environments.",
     },
     {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Tech Hub Navigator",
+      company: "University of Maine at Augusta",
+      companylogo: require("./assets/images/uma.png"),
+      date: "Sep 2025 – Present",
+      desc: "Serve as a friendly and accessible point of contact for students seeking technical support. Provide hands-on assistance with hardware, software, and network issues within a collaborative, student-centered environment."
     },
     {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    }
+      role: "Forensics",
+      company: "Squid Proxy Lovers",
+      companylogo: require("./assets/images/spl.png"),
+      date: "Jan 2025 – Present",
+      desc: "I participate in cybersecurity competitions with my team, serving as a forensics specialist. \n https://spl.team \n https://ctftime.org/team/222966"
+    },
+    {
+      role: "Student Researcher & Lab Instructor",
+      company: "Maine Cyber Range",
+      companylogo: require("./assets/images/mcr.png"),
+      date: "Oct 2023 – May 2025",
+      desc: "Taught advanced cybersecurity concepts to undergraduate and graduate students through hands-on labs on a virtual cyber range, facilitating experiential learning in network defense, penetration testing, and digital forensics. Collaborated with student researchers to advise local governments across Maine on strengthening their security posture, and developed real-world simulated scenarios to demonstrate the impact of effective cybersecurity practices."
+    },
+    {
+      role: "Player / Team Captain",
+      company: "Cyber Moose",
+      companylogo: require("./assets/images/cybermooselogo.png"),
+      date: "Sep 2022 – Jan 2025",
+      desc: "Originally joined as a player in the National Cyber League competitions, quickly advancing to team captain due to strong performance and leadership skills. Led the team to achieve a school-record 25th place nationally by coordinating practice sessions, developing strategies, and fostering collaboration among team members."
+    },
   ]
-};
-
-/* Your Open Source Section to View Your Github Pinned Projects
-To know how to get github key look at readme.md */
-
-const openSource = {
-  showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
-  display: true // Set false to hide this section, defaults to true
-};
-
-// Some big projects you have worked on
-
-const bigProjects = {
-  title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
-  projects: [
-    {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      footerLink: [
-        {
-          name: "Visit Website",
-          url: "http://saayahealth.com/"
-        }
-        //  you can add extra buttons here.
-      ]
-    },
-    {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      footerLink: [
-        {
-          name: "Visit Website",
-          url: "http://nextu.se/"
-        }
-      ]
-    }
-  ],
-  display: true // Set false to hide this section, defaults to true
 };
 
 // Achievement Section
 // Include certificates, talks etc
 
 const achievementSection = {
-  title: emoji("Achievements And Certifications 🏆 "),
+  title: emoji("Achievements "),
   subtitle:
-    "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
+    "",
 
   achievementsCards: [
     {
-      title: "Google Code-In Finalist",
+      title: "Second Place Forensics in National Cyber League",
       subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      image: require("./assets/images/codeInLogo.webp"),
-      imageAlt: "Google Code-In Logo",
+        "I achieved second place in the Forensics category during the Spring 2025 National Cyber League competition, demonstrating exceptional skills in digital forensics.",
+      image: require("./assets/images/ncl.png"),
+      imageAlt: "National Cyber League Logo",
       footerLink: [
-        {
-          name: "Certification",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
-        },
-        {
-          name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        },
-        {
-          name: "Google Code-in Blog",
-          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
-        }
       ]
     },
     {
-      title: "Google Assistant Action",
+      title: "Second Place Enumeration & Exploitation in National Cyber League",
       subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
-      imageAlt: "Google Assistant Action Logo",
+        "I achieved second place in the Enumeration & Exploitation category during the Fall 2025 National Cyber League competition, showcasing strong abilities in identifying and exploiting system vulnerabilities.",
+      image: require("./assets/images/ncl.png"),
+      imageAlt: "National Cyber League Logo",
       footerLink: [
-        {
-          name: "View Google Assistant Action",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
-        }
       ]
     },
-
     {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
-      imageAlt: "PWA Logo",
+      title: "Diamond III in National Cyber League",
+      subtitle:
+        "Consistently maintained a Diamond I-III ranking in the National Cyber League competitions, showcasing advanced skills in cybersecurity and problem-solving.",
+      image: require("./assets/images/ncl.png"),
+      imageAlt: "National Cyber League Logo",
       footerLink: [
-        {name: "Certification", url: ""},
-        {
-          name: "Final Project",
-          url: "https://pakistan-olx-1.firebaseapp.com/"
-        }
       ]
-    }
-  ],
-  display: true // Set false to hide this section, defaults to true
-};
-
-// Blogs Section
-
-const blogSection = {
-  title: "Blogs",
-  subtitle:
-    "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
-  displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
-  blogs: [
-    {
-      url: "https://blog.usejournal.com/create-a-google-assistant-action-and-win-a-google-t-shirt-and-cloud-credits-4a8d86d76eae",
-      title: "Win a Google Assistant Tshirt and $200 in Google Cloud Credits",
-      description:
-        "Do you want to win $200 and Google Assistant Tshirt by creating a Google Assistant Action in less then 30 min?"
     },
     {
-      url: "https://medium.com/@saadpasta/why-react-is-the-best-5a97563f423e",
-      title: "Why REACT is The Best?",
-      description:
-        "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
-    }
-  ],
-  display: true // Set false to hide this section, defaults to true
-};
-
-// Talks Sections
-
-const talkSection = {
-  title: "TALKS",
-  subtitle: emoji(
-    "I LOVE TO SHARE MY LIMITED KNOWLEDGE AND GET A SPEAKER BADGE 😅"
-  ),
-
-  talks: [
-    {
-      title: "Build Actions For Google Assistant",
-      subtitle: "Codelab at GDG DevFest Karachi 2019",
-      slides_url: "https://bit.ly/saadpasta-slides",
-      event_url: "https://www.facebook.com/events/2339906106275053/"
-    }
-  ],
-  display: true // Set false to hide this section, defaults to true
-};
-
-// Podcast Section
-
-const podcastSection = {
-  title: emoji("Podcast 🎙️"),
-  subtitle: "I LOVE TO TALK ABOUT MYSELF AND TECHNOLOGY",
-
-  // Please Provide with Your Podcast embeded Link
-  podcast: [
-    "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
+      title: "US Cyber Games",
+      subtitle:
+        "I was selected for both the combine and pipeline programs of the US Cyber Games in Seasons IV & V, highlighting my dedication and skill in the field of cybersecurity.",
+      image: require("./assets/images/uscg.png"),
+      imageAlt: "US Cyber Games Logo",
+      footerLink: [
+      ]
+    },
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -369,39 +187,44 @@ const resumeSection = {
 };
 
 const contactInfo = {
-  title: emoji("Contact Me ☎️"),
+  title: emoji("Contact Me"),
   subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com"
+    "Discord is the best contact method, for professional inquiries use email.",
+  number: "+1 207-631-9722",
+  email_address: "zoeylinardos@gmail.com"
 };
 
-// Twitter Section
+const isHireable = true; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
 
-const twitterDetails = {
-  userName: "twitter", //Replace "twitter" with your twitter username without @
-  display: true // Set true to display this section, defaults to false
+// Roblox Game Section
+const robloxGameSection = {
+  title: "[Alpha] Squid Game with NPCs",
+  subtitle: "My Most Popular Roblox Game",
+  description: "An immersive Roblox experience featuring the classic Squid Game challenges with AI-driven NPCs. Lead development and design for this popular game that has attracted thousands of players.",
+  gameUrl: "https://www.roblox.com/games/101390204205517/Squid-Game-with-NPCs",
+  universeId: 7276011284, // Universe ID for API stats fetching
+  placeId: 101390204205517, // Place ID
+  projects: [
+    {
+      title: "[Alpha] Squid Game with NPCs",
+      description: "An immersive Roblox experience featuring the classic Squid Game challenges with AI-driven NPCs. Lead development and design for this popular game that has attracted thousands of players.",
+      thumbnail: require("./assets/images/squidthumbnail.png"),
+      gameUrl: "https://www.roblox.com/games/101390204205517/Squid-Game-with-NPCs"
+    }
+    // Add more projects here for carousel/multiple games
+  ],
+  display: true // Set false to hide this section
 };
-
-const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
 
 export {
-  illustration,
   greeting,
   socialMediaLinks,
-  splashScreen,
   skillsSection,
   educationInfo,
-  techStack,
   workExperiences,
-  openSource,
-  bigProjects,
   achievementSection,
-  blogSection,
-  talkSection,
-  podcastSection,
   contactInfo,
-  twitterDetails,
   isHireable,
-  resumeSection
+  resumeSection,
+  robloxGameSection
 };

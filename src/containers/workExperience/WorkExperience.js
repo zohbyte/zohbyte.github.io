@@ -1,25 +1,23 @@
-import React, {useContext} from "react";
+import React from "react";
 import "./WorkExperience.scss";
 import ExperienceCard from "../../components/experienceCard/ExperienceCard";
 import {workExperiences} from "../../portfolio";
-import {Fade} from "react-reveal";
-import StyleContext from "../../contexts/StyleContext";
+import ScrollReveal from "../../components/scrollReveal/ScrollReveal";
 
 export default function WorkExperience() {
-  const {isDark} = useContext(StyleContext);
   if (workExperiences.display) {
     return (
-      <div id="experience">
-        <Fade bottom duration={1000} distance="20px">
+      <ScrollReveal>
+        <div id="experience">
           <div className="experience-container" id="workExperience">
             <div>
-              <h1 className="experience-heading">Experiences</h1>
+              <h1 className="experience-heading">Experience</h1>
               <div className="experience-cards-div">
                 {workExperiences.experience.map((card, i) => {
                   return (
                     <ExperienceCard
                       key={i}
-                      isDark={isDark}
+                      isDark={false}
                       cardInfo={{
                         company: card.company,
                         desc: card.desc,
@@ -34,8 +32,8 @@ export default function WorkExperience() {
               </div>
             </div>
           </div>
-        </Fade>
-      </div>
+        </div>
+      </ScrollReveal>
     );
   }
   return null;

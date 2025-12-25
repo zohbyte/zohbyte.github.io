@@ -1,90 +1,96 @@
-/* Change colors in this file to style to your needs on a global level. 
-Certain colors are used for different and multiply types of elements. 
-For greater control over colors visit each components .scss file. */
+/* Global Theme Colors — Gradient Purple Brand */
 
-// button colors
-$buttonColor: #55198b;
-$buttonHover: #8c43ce;
-$topButtonHover: #000;
+/* ---- Brand Gradient ---- */
+$brandStart: #7851a9;
+$brandEnd: #b796ff;
+$brandGradient: linear-gradient(135deg, $brandStart, $brandEnd);
 
-// text colors light theme
-$titleColor: #000000;
-$textColor: #000000;
-$subTitle: #868e96;
-$cardSubtitle: #666666;
-$talkCardSubTitle: #7f8287;
-$blogCardTitleColor: #262626;
+/* Buttons */
+$buttonColor: #000000;
+$buttonHover: #333333;
+$topButtonHover: rgba(0,0,0,0.6);
 
-// text color dark theme
+/* Text Colors */
+$titleColor: #1a102b;
+$textColor: #2b1b46;
+$subTitle: #5c4f77;
+$cardSubtitle: #564d6d;
+$talkCardSubTitle: #6b5f88;
+$blogCardTitleColor: #2e2540;
+
+/* Dark Mode */
 $textColorDark: #ffffff;
 
-// toggle switch colors
-$toggleCheck: #2196f3;
-$toggleSwitchSliderBG: #ccc;
+/* Toggles */
+$toggleCheck: $brandEnd;
+$toggleSwitchSliderBG: lighten($brandStart, 35%);
 
-// githubRepo specific colors
-$githubRepoCardLanguageColorBG: #0000ff;
-$githubRepoCardColor: rgb(88, 96, 105);
-$githubRepoCardRepoCardStatsColor: rgb(106, 115, 125);
-$githubRepoCardRepoNameColor: rgb(36, 41, 46);
-$githubProfileCardLocationTS: #ffebcd;
-$githubProfileCardBorder: #6c63ff;
+/* Github Repo UI */
+$githubRepoCardLanguageColorBG: $brandStart;
+$githubRepoCardColor: #5e4f80;
+$githubRepoCardRepoCardStatsColor: #6a5d8b;
+$githubRepoCardRepoNameColor: #3a2c57;
+$githubProfileCardLocationTS: #e5d8ff;
+$githubProfileCardBorder: $brandEnd;
 
-// light background colors
-$lightBackground1: #fff;
-$lightBackground2: rgb(255, 255, 255);
-$lightBackground3: #f5f2f4;
-$blogCardContainerColor: #586069;
-// dark background colors
+/* Light Backgrounds */
+$lightBackground1: #ffffff;
+$lightBackground2: #faf7ff;
+$lightBackground3: #f2ebff;
+$blogCardContainerColor: #5e4f80;
+
+/* Dark Background */
 $darkBackground: #171c28;
 
-// light theme box shadows
-$lightBoxShadowDark: rgba(0, 0, 0, 0.2);
-$lightBoxShadow: rgba(0, 0, 0, 0.1);
-$lightBoxShadowDarker: rgba(0, 0, 0, 0.3);
+/* Shadows */
+$lightBoxShadowDark: rgba(0, 0, 0, 0.15);
+$lightBoxShadow: rgba(0, 0, 0, 0.08);
+$lightBoxShadowDarker: rgba(0, 0, 0, 0.25);
 
-// dark theme box shadows
-$darkBoxShadow: #d9dbdf;
+$darkBoxShadow: #cfc7ff;
 $darkBoxShadow2: #ffffff;
 
-// linear gradients
+/* Gradients */
 $experienceCardBlurredDivLG: linear-gradient(
-  rgba(0, 0, 0, 0.4),
-  rgba(0, 0, 0, 0.2)
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.2)
 );
+
 $experienceCardBannerLG: linear-gradient(
-  rgba(0, 0, 0, 0.7),
-  rgba(0, 0, 0, 0.5)
+    rgba(0,0,0,0.65),
+    rgba(0,0,0,0.45)
 );
 
-// borders
-$progressBarBackground: rgb(243, 239, 239);
-$lightBorder1: rgba(211, 211, 211, 0.397);
-$educationCardBorder: #a9a7f9;
+/* Borders */
+$progressBarBackground: #ece7ff;
+$lightBorder1: rgba(200, 180, 255, 0.4);
+$educationCardBorder: $brandEnd;
 
-// hovers
-$achievementCertificateCardHoverDark: rgba(255, 255, 255, 0.2);
-$blogCardHoverSmallColor: rgba(255, 255, 255, 0.8);
-$headerHoverBG: #f4f4f4;
-$contactDetailHoverTS: #b5b5b5;
+/* Hovers */
+$achievementCertificateCardHoverDark: rgba(255,255,255,0.3);
+$blogCardHoverSmallColor: rgba(255,255,255,0.85);
+$headerHoverBG: #eee6ff;
+$contactDetailHoverTS: #cfc3ff;
 
-// misc backgrounds
-$progressBarSpanBG: #aaa5ff;
-$iconBackground: #333;
-$appHeaderBG: #282c34;
+/* Misc */
+$progressBarSpanBG: $brandEnd;
+$iconBackground: #2d203f;
+$appHeaderBG: #21162f;
 
-// misc colors
-$skillsColor: #645beb;
-$appLink: #09d3ac;
+/* Skill Tags, Links */
+$skillsColor: $brandStart;
+$appLink: lighten($brandEnd, 5%);
 
-// social media icons
-$faceBook: #3b5998;
-$linkedin: #0e76a8;
-$github: #333;
-$gitlab: #fca326;
-$google: #ea4335;
-$twitter: #1da1f2;
-$medium: #000;
-$stackoverflow: #f48024;
-$instagram: #c13584;
-$kaggle: #20beff;
+/* Socials - All black */
+$faceBook: #000000;
+$linkedin: #000000;
+$github: #000000;
+$gitlab: #000000;
+$google: #000000;
+$twitter: #000000;
+$medium: #000000;
+$stackoverflow: #000000;
+$instagram: #000000;
+$kaggle: #000000;
+$roblox: #000000;
+$discord: #000000;

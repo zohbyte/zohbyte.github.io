@@ -7,6 +7,8 @@
 .experience-heading {
   font-size: 56px;
   font-weight: 400;
+  color: #ffffff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .experience-container {
@@ -14,7 +16,8 @@
   width: 90%;
   padding: 20px 10px;
   margin: 0px auto;
-  margin-top: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .experience-container > * {

@@ -8,14 +8,42 @@ export default function socialMedia() {
   }
   return (
     <div className="social-media-div">
-      {socialMediaLinks.github ? (
+      {socialMediaLinks.discord ? (
         <a
-          href={socialMediaLinks.github}
-          className="icon-button github"
+          href={socialMediaLinks.discord}
+          className="icon-button discord"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <i className="fab fa-github"></i>
+          <i className="fab fa-discord"></i>
+          <span></span>
+        </a>
+      ) : null}
+
+      {socialMediaLinks.roblox ? (
+        <a
+          href={socialMediaLinks.roblox}
+          className="icon-button roblox"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img 
+            src={require("../../assets/images/roblox-icon.png")} 
+            alt="Roblox" 
+            className="icon-img"
+          />
+          <span></span>
+        </a>
+      ) : null}
+
+      {socialMediaLinks.gmail ? (
+        <a
+          href={`mailto:${socialMediaLinks.gmail}`}
+          className="icon-button google"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i className="fas fa-envelope"></i>
           <span></span>
         </a>
       ) : null}
@@ -32,14 +60,14 @@ export default function socialMedia() {
         </a>
       ) : null}
 
-      {socialMediaLinks.gmail ? (
+      {socialMediaLinks.github ? (
         <a
-          href={`mailto:${socialMediaLinks.gmail}`}
-          className="icon-button google"
+          href={socialMediaLinks.github}
+          className="icon-button github"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <i className="fas fa-envelope"></i>
+          <i className="fab fa-github"></i>
           <span></span>
         </a>
       ) : null}
