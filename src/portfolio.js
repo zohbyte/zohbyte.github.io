@@ -52,7 +52,7 @@ const skillsSection = {
     { skillName: "Lua / Luau", fontAwesomeClassname: "fas fa-code" },
     { skillName: "Python", fontAwesomeClassname: "fab fa-python" },
     { skillName: "JavaScript (basic)", fontAwesomeClassname: "fab fa-js" },
-    { skillName: "Roblox Development", fontAwesomeClassname: "fas fa-cube" },
+    { skillName: "Roblox Development", fontAwesomeClassname: "fas fa-hammer" },
     { skillName: "Digital Forensics", fontAwesomeClassname: "fas fa-microscope" },
     { skillName: "CTF / Offensive Security", fontAwesomeClassname: "fas fa-flag-checkered" },
     { skillName: "Kali Linux", fontAwesomeClassname: "fas fa-terminal" },
