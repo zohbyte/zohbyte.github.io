@@ -22,7 +22,7 @@ const greeting = {
 const socialMediaLinks = {
   github: "https://github.com/zohbyte",
   linkedin: "https://www.linkedin.com/in/yolked/",
-  gmail: "zoeylinardos@gmail.com",
+  gmail: "contact@zohbyte.dev",
   discord: "https://discord.com/users/727645538190753863",
   roblox: "https://www.roblox.com/users/354594269/profile",
   // gitlab: "https://gitlab.com/saadpasta",
@@ -191,7 +191,7 @@ const contactInfo = {
   subtitle:
     "Discord is the best contact method, for professional inquiries use email.",
   number: "+1 207-631-9722",
-  email_address: "zoeylinardos@gmail.com"
+  email_address: "contact@zohbyte.dev"
 };
 
 const isHireable = true; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
