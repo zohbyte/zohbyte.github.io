@@ -1,0 +1,15 @@
+{
+  "short_name": "Zoey Linardos",
+  "name": "Zoey Linardos - Cybersecurity & Game Developer Portfolio",
+  "icons": [
+    {
+      "src": "/zoey.png",
+      "sizes": "any",
+      "type": "image/png"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#7851a9",
+  "background_color": "#7851a9"
+}

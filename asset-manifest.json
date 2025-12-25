@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.af8a83b1.css",
+    "main.js": "/portfolio/static/js/main.87a4e62e.js",
+    "static/media/zoey.png": "/portfolio/static/media/zoey.e770c8463bece6ffed32.png",
+    "static/media/cybermooselogo.png": "/portfolio/static/media/cybermooselogo.942bd675d0d5de16980c.png",
+    "static/media/Montserrat-Regular.ttf": "/portfolio/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
+    "static/media/Agustina.woff": "/portfolio/static/media/Agustina.eb0c59dda4cc308cba96.woff",
+    "static/media/mcr.png": "/portfolio/static/media/mcr.5f61fffe6a94dd799538.png",
+    "static/media/ncl.png": "/portfolio/static/media/ncl.b62f4210bbcbfc2553bd.png",
+    "static/media/squidthumbnail.png": "/portfolio/static/media/squidthumbnail.0c30e510c5265e6a1db3.png",
+    "static/media/uscg.png": "/portfolio/static/media/uscg.39b432fb2bb2c14d4a17.png",
+    "static/media/spl.png": "/portfolio/static/media/spl.a50c04b360dabf309f14.png",
+    "static/media/roblox-icon.png": "/portfolio/static/media/roblox-icon.1b3a3d1270739e67333c.png",
+    "index.html": "/portfolio/index.html",
+    "main.af8a83b1.css.map": "/portfolio/static/css/main.af8a83b1.css.map",
+    "main.87a4e62e.js.map": "/portfolio/static/js/main.87a4e62e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.af8a83b1.css",
+    "static/js/main.87a4e62e.js"
+  ]
+}
