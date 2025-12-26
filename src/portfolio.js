@@ -21,7 +21,7 @@ const greeting = {
 
 const socialMediaLinks = {
   github: "https://github.com/zohbyte",
-  linkedin: "https://www.linkedin.com/in/yolked/",
+  linkedin: "https://www.linkedin.com/in/zohbyte/",
   gmail: "contact@zohbyte.dev",
   discord: "https://discord.com/users/727645538190753863",
   roblox: "https://www.roblox.com/users/354594269/profile",
