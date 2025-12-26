@@ -122,7 +122,7 @@ const workExperiences = {
       company: "Squid Proxy Lovers",
       companylogo: require("./assets/images/spl.png"),
       date: "Jan 2025 – Present",
-      desc: "I participate in cybersecurity competitions with my team, serving as a forensics specialist.",
+      desc: "I participate in cybersecurity competitions with my team, serving as a forensics specialist. Squid Proxy Lovers is a top 25 team globally on CTFTime.",
       links: [
         {text: "spl.team", url: "https://spl.team"},
         {text: "CTFTime", url: "https://ctftime.org/team/222966"}
@@ -155,7 +155,7 @@ const achievementSection = {
   achievementsCards: [
     {
       organization: "National Cyber League",
-      achievements: "2nd Place Forensics",
+      achievements: "2nd Place out of 8575",
       description:
         "I achieved second place in the Forensics category during the Spring 2025 National Cyber League competition, demonstrating exceptional skills in digital forensics.",
       image: require("./assets/images/ncl.png"),
@@ -164,7 +164,7 @@ const achievementSection = {
     },
     {
       organization: "National Cyber League",
-      achievements: "2nd Place Enumeration & Exploitation",
+      achievements: "2nd Place out of 7876",
       description:
         "I achieved second place in the Enumeration & Exploitation category during the Fall 2025 National Cyber League competition, showcasing strong abilities in identifying and exploiting system vulnerabilities.",
       image: require("./assets/images/ncl.png"),
