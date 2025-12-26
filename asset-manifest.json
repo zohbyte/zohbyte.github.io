@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.9b3f1448.css",
-    "main.js": "/static/js/main.55733e6a.js",
+    "main.css": "/static/css/main.ba491522.css",
+    "main.js": "/static/js/main.67533877.js",
     "static/media/zoey.png": "/static/media/zoey.62c22859fb0018d20f0b.png",
     "static/media/cybermooselogo.png": "/static/media/cybermooselogo.942bd675d0d5de16980c.png",
     "static/media/Montserrat-Regular.ttf": "/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
@@ -12,11 +12,11 @@
     "static/media/uscg.png": "/static/media/uscg.39b432fb2bb2c14d4a17.png",
     "static/media/spl.png": "/static/media/spl.a50c04b360dabf309f14.png",
     "index.html": "/index.html",
-    "main.9b3f1448.css.map": "/static/css/main.9b3f1448.css.map",
-    "main.55733e6a.js.map": "/static/js/main.55733e6a.js.map"
+    "main.ba491522.css.map": "/static/css/main.ba491522.css.map",
+    "main.67533877.js.map": "/static/js/main.67533877.js.map"
   },
   "entrypoints": [
-    "static/css/main.9b3f1448.css",
-    "static/js/main.55733e6a.js"
+    "static/css/main.ba491522.css",
+    "static/js/main.67533877.js"
   ]
 }
