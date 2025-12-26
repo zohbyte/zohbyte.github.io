@@ -182,7 +182,7 @@ const achievementSection = {
     },
     {
       organization: "US Cyber Games",
-      achievements: "Combine & Pipeline Programs (Seasons IV & V)",
+      achievements: "Combine & Pipeline (Season IV & V)",
       description:
         "I was selected for both the combine and pipeline programs of the US Cyber Games in Seasons IV & V, highlighting my dedication and skill in the field of cybersecurity.",
       image: require("./assets/images/uscg.png"),
