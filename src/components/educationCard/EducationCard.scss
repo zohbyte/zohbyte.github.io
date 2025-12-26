@@ -76,6 +76,8 @@
 
 .education-text-bullets > ul {
   margin-top: 0.5rem;
+  list-style-type: disc;
+  padding-left: 1.5rem;
 }
 
 /* Media Query */
@@ -127,8 +129,19 @@
     margin-bottom: 1rem;
     margin-right: 0;
   }
+  .education-text-bullets {
+    text-align: left;
+    display: block;
+  }
   .education-text-bullets > ul {
-    max-width: 80%;
-    margin: auto;
+    max-width: 100%;
+    margin: 0;
+    padding-left: 1rem;
+    text-align: left;
+    list-style-position: inside;
+    display: block;
+  }
+  .education-text-bullets > ul > li {
+    text-align: left;
   }
 }

@@ -7,6 +7,8 @@
   margin-bottom: 0px;
   margin-top: 0px;
   text-align: left;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .software-skill-inline {
@@ -25,4 +27,22 @@
 .software-skill-inline > p {
   color: $subTitle;
   font-size: 10px;
+}
+
+/* Mobile Grid Layout */
+@media (max-width: 768px) {
+  .dev-icons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, auto);
+    gap: 1rem;
+    justify-items: center;
+    width: 100%;
+  }
+
+  .software-skill-inline {
+    margin-right: 0;
+    margin-bottom: 0;
+    width: 100%;
+  }
 }

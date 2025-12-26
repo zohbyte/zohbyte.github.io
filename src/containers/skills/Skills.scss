@@ -75,6 +75,12 @@
     text-align: center; // optional, remove if you want even mobile left aligned
   }
 
+  .skills-list {
+    padding-left: 1rem;
+    text-align: left;
+    list-style-position: inside;
+  }
+
   .skills-text {
     font-size: 16px;
   }
