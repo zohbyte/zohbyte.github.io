@@ -3,6 +3,7 @@ import {Fade} from "react-reveal";
 import "./Greeting.scss";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
+import PronounsCard from "../../components/pronounsCard/PronounsCard";
 import {greeting} from "../../portfolio";
 
 export default function Greeting() {
@@ -22,14 +23,9 @@ export default function Greeting() {
           <div className="greeting-text-div">
             <div>
               <h1 className="greeting-text">Hi, I'm Zoey!</h1>
-              <a
-                href="https://en.pronouns.page/@zohbyte"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="greeting-pronouns"
-              >
-                (she/her)
-              </a>
+              <PronounsCard>
+                <span className="greeting-pronouns">(she/her)</span>
+              </PronounsCard>
               <p className="greeting-text-p subTitle">{greeting.subTitle}</p>
               <div id="resume" className="empty-div"></div>
               <SocialMedia />

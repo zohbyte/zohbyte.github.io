@@ -1,0 +1,169 @@
+@import "../../_globalColor";
+
+.pronouns-trigger {
+  position: relative;
+  display: inline-block;
+  cursor: help;
+}
+
+.pronouns-card {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: 10px;
+  background-color: $lightBackground2;
+  border: 1px solid $lightBorder1;
+  border-radius: 10px;
+  box-shadow: $lightBoxShadowDark 0px 10px 30px -15px;
+  padding: 1.5rem;
+  min-width: 600px;
+  width: max-content;
+  z-index: 1000;
+  pointer-events: none;
+  white-space: nowrap;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 20px;
+    border: 8px solid transparent;
+    border-bottom-color: $lightBackground2;
+  }
+}
+
+.pronouns-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.pronouns-flags-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.pronouns-flag {
+  display: inline-block;
+  color: $textColor;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0.25rem 0.5rem;
+}
+
+.pronouns-sections-grid {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 2rem;
+  align-items: start;
+}
+
+.pronouns-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.pronouns-section-title {
+  color: $textColor;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.pronouns-section-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.pronouns-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: $textColor;
+  font-size: 14px;
+  margin-bottom: 0.5rem;
+  white-space: nowrap;
+  min-height: 20px;
+  height: 20px;
+}
+
+.pronouns-icon {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  
+  &.favourite {
+    color: #ff6b9d;
+  }
+  
+  &.okay {
+    color: #4ecdc4;
+  }
+  
+  &.avoid {
+    color: #ff6b6b;
+  }
+}
+
+.pronouns-item-value {
+  flex: 1;
+}
+
+.pronouns-flag-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+  white-space: nowrap;
+  min-height: 20px;
+  height: 20px;
+}
+
+.pronouns-flag-image {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  flex-shrink: 0;
+  border-radius: 8px;
+}
+
+.pronouns-flag-name {
+  color: $textColor;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.pronouns-date-icon {
+  width: 16px;
+  height: 16px;
+  color: $textColor;
+  flex-shrink: 0;
+}
+
+.pronouns-legend {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.pronouns-legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: $textColor;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
