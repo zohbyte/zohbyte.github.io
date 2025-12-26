@@ -3,6 +3,19 @@
 // To change portfolio colors globally go to the  _globalColor.scss file
 
 import emoji from "react-easy-emoji";
+import { 
+  SiCplusplus, 
+  SiLua, 
+  SiRobloxstudio,
+  SiRoblox,
+  SiPython, 
+  SiJavascript,
+  SiGit,
+  SiVmware
+} from "react-icons/si";
+import { ImTux } from "react-icons/im";
+import { FaMicroscope, FaServer, FaChalkboardTeacher, FaNetworkWired } from "react-icons/fa";
+import { TbFlagFilled } from "react-icons/tb";
 
 // Summary And Greeting Section
 
@@ -49,28 +62,29 @@ const skillsSection = {
   ],
 
   softwareSkills: [
-    {skillName: "Lua / Luau", fontAwesomeClassname: "fas fa-code"},
-    {skillName: "Python", fontAwesomeClassname: "fab fa-python"},
-    {skillName: "JavaScript (basic)", fontAwesomeClassname: "fab fa-js"},
-    {skillName: "Roblox Development", fontAwesomeClassname: "fas fa-hammer"},
-    {skillName: "Digital Forensics", fontAwesomeClassname: "fas fa-microscope"},
+    {skillName: "Lua / Luau", iconComponent: <SiLua />},
+    {skillName: "Python", iconComponent: <SiPython />},
+    {skillName: "JavaScript (basic)", iconComponent: <SiJavascript />},
+    {skillName: "C++ (basic)", iconComponent: <SiCplusplus />},
+    {skillName: "Roblox Development", iconComponent: <SiRobloxstudio />},
+    {skillName: "Digital Forensics", iconComponent: <FaMicroscope />},
     {
       skillName: "CTF / Offensive Security",
-      fontAwesomeClassname: "fas fa-flag-checkered"
+      iconComponent: <TbFlagFilled />
     },
-    {skillName: "Kali Linux", fontAwesomeClassname: "fas fa-terminal"},
-    {skillName: "Wireshark", fontAwesomeClassname: "fas fa-network-wired"},
+    {skillName: "Linux", iconComponent: <ImTux />},
+    {skillName: "Wireshark", iconComponent: <FaNetworkWired />},
     {
       skillName: "Virtualization (VMware)",
-      fontAwesomeClassname: "fas fa-server"
+      iconComponent: <SiVmware />
     },
     {
       skillName: "Git / Version Control",
-      fontAwesomeClassname: "fab fa-git-alt"
+      iconComponent: <SiGit />
     },
     {
       skillName: "Teaching & Leadership",
-      fontAwesomeClassname: "fas fa-chalkboard-teacher"
+      iconComponent: <FaChalkboardTeacher />
     }
   ],
 
@@ -172,11 +186,11 @@ const achievementSection = {
       footerLink: []
     },
     {
-      organization: "Roblox",
+      organization: "Squid Games with NPCS",
       achievements: "3+ Million Visits / 45,354 Peak DAU",
       description:
         "Achieved over 3 million visits for NPC Squid Games, with a peak daily active user count of 45,354, demonstrating strong game development and player engagement skills.",
-      image: require("./assets/images/roblox-icon.png"),
+      iconComponent: <SiRobloxstudio />,
       imageAlt: "Roblox Logo",
       footerLink: []
     },

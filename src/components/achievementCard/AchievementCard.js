@@ -13,7 +13,11 @@ export default function AchievementCard({cardInfo, isDark}) {
 
   return (
     <div className="certificate-card">
-      {cardInfo.image && (
+      {cardInfo.iconComponent ? (
+        <div className="certificate-image-div">
+          {cardInfo.iconComponent}
+        </div>
+      ) : cardInfo.image && (
         <div className="certificate-image-div">
           <img
             src={cardInfo.image}

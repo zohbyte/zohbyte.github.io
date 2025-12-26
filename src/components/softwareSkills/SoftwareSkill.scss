@@ -24,6 +24,19 @@
   color: $subTitle;
 }
 
+.software-skill-inline > svg {
+  color: $subTitle;
+  fill: currentColor;
+}
+
+.software-skill-inline > img {
+  width: 3rem;
+  height: 3rem;
+  object-fit: contain;
+  filter: brightness(0) saturate(100%) invert(1);
+  opacity: 0.8;
+}
+
 .software-skill-inline > p {
   color: $subTitle;
   font-size: 10px;

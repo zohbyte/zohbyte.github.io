@@ -34,6 +34,7 @@ export default function Achievement() {
                     subtitle: card.subtitle,
                     image: card.image,
                     imageAlt: card.imageAlt,
+                    iconComponent: card.iconComponent,
                     footer: card.footerLink
                   }}
                 />

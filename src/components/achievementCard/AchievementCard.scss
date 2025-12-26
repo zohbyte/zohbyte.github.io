@@ -82,13 +82,28 @@
   position: relative;
   height: 140px;
   min-height: 140px;
-  overflow: hidden;
+  overflow: visible;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 1.5rem;
   width: 100%;
   box-sizing: border-box;
+  
+  svg {
+    width: 120px !important;
+    height: 120px !important;
+    min-width: 120px;
+    min-height: 120px;
+    color: $textColor !important;
+    fill: currentColor !important;
+    display: block;
+    flex-shrink: 0;
+    
+    * {
+      fill: currentColor !important;
+    }
+  }
 }
 .achievement-cards-div {
   display: grid;

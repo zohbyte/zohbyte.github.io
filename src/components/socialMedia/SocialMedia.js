@@ -1,6 +1,7 @@
 import React from "react";
 import "./SocialMedia.scss";
 import {socialMediaLinks} from "../../portfolio";
+import { SiRoblox } from "react-icons/si";
 
 export default function socialMedia() {
   if (!socialMediaLinks.display) {
@@ -27,11 +28,7 @@ export default function socialMedia() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img
-            src={require("../../assets/images/roblox-icon.png")}
-            alt="Roblox"
-            className="icon-img"
-          />
+          <SiRoblox />
           <span></span>
         </a>
       ) : null}
