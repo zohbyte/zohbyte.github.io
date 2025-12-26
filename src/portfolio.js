@@ -155,7 +155,7 @@ const achievementSection = {
   achievementsCards: [
     {
       organization: "National Cyber League",
-      achievements: "2nd Place in Forensics out of 8575",
+      achievements: "Forensics 2nd out of 8575",
       description:
         "I achieved second place in the Forensics category during the Spring 2025 National Cyber League competition, demonstrating exceptional skills in digital forensics.",
       image: require("./assets/images/ncl.png"),
@@ -164,7 +164,7 @@ const achievementSection = {
     },
     {
       organization: "National Cyber League",
-      achievements: "2nd Place in Enumeration & Exploitation out of 7876",
+      achievements: "Enumerate & Exploit 2nd out of 7876",
       description:
         "I achieved second place in the Enumeration & Exploitation category during the Fall 2025 National Cyber League competition, showcasing strong abilities in identifying and exploiting system vulnerabilities.",
       image: require("./assets/images/ncl.png"),
@@ -172,12 +172,12 @@ const achievementSection = {
       footerLink: []
     },
     {
-      organization: "National Cyber League",
-      achievements: "Diamond Rating",
+      organization: "Roblox",
+      achievements: "3+ Million Visits / 45,354 Peak DAU",
       description:
-        "Consistently maintained a Diamond I-III ranking in the National Cyber League competitions, showcasing advanced skills in cybersecurity and problem-solving.",
-      image: require("./assets/images/ncl.png"),
-      imageAlt: "National Cyber League Logo",
+        "Achieved over 3 million visits for NPC Squid Games, with a peak daily active user count of 45,354, demonstrating strong game development and player engagement skills.",
+      image: require("./assets/images/roblox-icon.png"),
+      imageAlt: "Roblox Logo",
       footerLink: []
     },
     {
@@ -190,12 +190,12 @@ const achievementSection = {
       footerLink: []
     },
     {
-      organization: "Roblox",
-      achievements: "3+ Million Visits / 45,354 Peak DAU",
+      organization: "National Cyber League",
+      achievements: "Diamond Rating",
       description:
-        "Achieved over 3 million visits for NPC Squid Games, with a peak daily active user count of 45,354, demonstrating strong game development and player engagement skills.",
-      image: require("./assets/images/roblox-icon.png"),
-      imageAlt: "Roblox Logo",
+        "Consistently maintained a Diamond I-III ranking in the National Cyber League competitions, showcasing advanced skills in cybersecurity and problem-solving.",
+      image: require("./assets/images/ncl.png"),
+      imageAlt: "National Cyber League Logo",
       footerLink: []
     }
   ],
