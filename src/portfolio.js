@@ -154,35 +154,48 @@ const achievementSection = {
 
   achievementsCards: [
     {
-      title: "Second Place Forensics in National Cyber League",
-      subtitle:
+      organization: "National Cyber League",
+      achievements: "2nd Place Forensics",
+      description:
         "I achieved second place in the Forensics category during the Spring 2025 National Cyber League competition, demonstrating exceptional skills in digital forensics.",
       image: require("./assets/images/ncl.png"),
       imageAlt: "National Cyber League Logo",
       footerLink: []
     },
     {
-      title: "Second Place Enumeration & Exploitation in National Cyber League",
-      subtitle:
+      organization: "National Cyber League",
+      achievements: "2nd Place Enumeration & Exploitation",
+      description:
         "I achieved second place in the Enumeration & Exploitation category during the Fall 2025 National Cyber League competition, showcasing strong abilities in identifying and exploiting system vulnerabilities.",
       image: require("./assets/images/ncl.png"),
       imageAlt: "National Cyber League Logo",
       footerLink: []
     },
     {
-      title: "Diamond III in National Cyber League",
-      subtitle:
+      organization: "National Cyber League",
+      achievements: "Diamond Rating",
+      description:
         "Consistently maintained a Diamond I-III ranking in the National Cyber League competitions, showcasing advanced skills in cybersecurity and problem-solving.",
       image: require("./assets/images/ncl.png"),
       imageAlt: "National Cyber League Logo",
       footerLink: []
     },
     {
-      title: "US Cyber Games",
-      subtitle:
+      organization: "US Cyber Games",
+      achievements: "Combine & Pipeline Programs (Seasons IV & V)",
+      description:
         "I was selected for both the combine and pipeline programs of the US Cyber Games in Seasons IV & V, highlighting my dedication and skill in the field of cybersecurity.",
       image: require("./assets/images/uscg.png"),
       imageAlt: "US Cyber Games Logo",
+      footerLink: []
+    },
+    {
+      organization: "Roblox",
+      achievements: "3+ Million Visits / 45,354 Peak DAU",
+      description:
+        "Achieved over 3 million visits for NPC Squid Games, with a peak daily active user count of 45,354, demonstrating strong game development and player engagement skills.",
+      image: require("./assets/images/roblox-icon.png"),
+      imageAlt: "Roblox Logo",
       footerLink: []
     }
   ],

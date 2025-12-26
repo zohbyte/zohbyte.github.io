@@ -27,8 +27,11 @@ export default function Achievement() {
                   key={i}
                   isDark={false}
                   cardInfo={{
+                    organization: card.organization,
+                    achievements: card.achievements,
                     title: card.title,
-                    description: card.subtitle,
+                    description: card.description,
+                    subtitle: card.subtitle,
                     image: card.image,
                     imageAlt: card.imageAlt,
                     footer: card.footerLink
