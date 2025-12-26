@@ -13,6 +13,12 @@ export default function Greeting() {
     <Fade bottom duration={1000} distance="40px">
       <div className="greet-main" id="home">
         <div className="greeting-main">
+          <div className="greeting-image-div">
+            <img
+              alt="Zoey headshot"
+              src={require("../../assets/images/zoey.png")}
+            ></img>
+          </div>
           <div className="greeting-text-div">
             <div>
               <h1 className="greeting-text">Hi, I'm Zoey!</h1>
@@ -38,12 +44,6 @@ export default function Greeting() {
                 )}
               </div>
             </div>
-          </div>
-          <div className="greeting-image-div">
-            <img
-              alt="Zoey headshot"
-              src={require("../../assets/images/zoey.png")}
-            ></img>
           </div>
         </div>
       </div>
