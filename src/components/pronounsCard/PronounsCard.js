@@ -21,7 +21,8 @@ const pronounsData = {
   ],
   pronouns: [
     { pronouns: "She/Her", preference: "favourite" },
-    { pronouns: "They/Them", preference: "okay" }
+    { pronouns: "They/Them", preference: "okay" },
+    { pronouns: "He/Him", preference: "avoid" }
   ],
   importantDates: [
     { name: "Birthday - November 23rd, 2001", preference: "favourite" },
