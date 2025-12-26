@@ -3,7 +3,7 @@
 .pronouns-trigger {
   position: relative;
   display: inline-block;
-  cursor: help;
+  cursor: pointer;
 }
 
 .pronouns-card {
@@ -19,7 +19,7 @@
   min-width: 600px;
   width: max-content;
   z-index: 1000;
-  pointer-events: none;
+  pointer-events: auto;
   white-space: nowrap;
   
   &::before {
@@ -80,7 +80,7 @@
 .pronouns-section-content {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 0.125rem;
 }
 
 .pronouns-item {
@@ -165,5 +165,152 @@
   color: $textColor;
   font-size: 12px;
   white-space: nowrap;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .pronouns-trigger {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+
+  .pronouns-card {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: auto;
+    width: 100vw;
+    max-width: 100vw;
+    padding: 0.75rem;
+    border-radius: 10px;
+    margin-top: 10px;
+    box-sizing: border-box;
+
+    &::before {
+      display: none; // Hide arrow on mobile
+    }
+  }
+
+  .pronouns-sections-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.75rem;
+    width: 100%;
+    align-items: start;
+  }
+
+  .pronouns-section {
+    min-width: 0; // Allow flex shrinking
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; // Left-align all content
+    width: 100%;
+  }
+
+  .pronouns-section-content {
+    width: 100%;
+    align-items: flex-start;
+    gap: 0.0625rem;
+  }
+
+  .pronouns-section-title {
+    font-size: 12px;
+    white-space: nowrap;
+    text-align: left;
+  }
+
+  .pronouns-item {
+    font-size: 11px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    min-width: 0;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    margin-bottom: 0;
+  }
+
+  .pronouns-flag-item {
+    font-size: 11px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    min-width: 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0;
+  }
+
+  .pronouns-item-value,
+  .pronouns-flag-name {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .pronouns-flag-image {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+  }
+
+  .pronouns-icon {
+    width: 12px;
+    height: 12px;
+    min-width: 12px;
+    min-height: 12px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .pronouns-date-icon {
+    width: 12px;
+    height: 12px;
+    min-width: 12px;
+    min-height: 12px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .pronouns-item > svg,
+  .pronouns-item .pronouns-icon > svg,
+  .pronouns-item .pronouns-date-icon > svg {
+    width: 12px !important;
+    height: 12px !important;
+    min-width: 12px !important;
+    min-height: 12px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: block;
+    flex-shrink: 0;
+  }
+
+  .pronouns-item .pronouns-icon,
+  .pronouns-item .pronouns-date-icon {
+    line-height: 1;
+    vertical-align: middle;
+  }
+
+  .pronouns-legend {
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    font-size: 10px;
+  }
+
+  .pronouns-legend-item {
+    font-size: 10px;
+  }
 }
 

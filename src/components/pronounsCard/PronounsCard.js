@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "./PronounsCard.scss";
 import { FaHeart, FaCheck, FaTimes, FaBirthdayCake } from "react-icons/fa";
 import { FaSyringe } from "react-icons/fa6";
@@ -54,16 +54,45 @@ const getDateIcon = (dateName) => {
 
 export default function PronounsCard({ children }) {
   const [isHovered, setIsHovered] = useState(false);
+  const [isPinned, setIsPinned] = useState(false);
+  const cardRef = useRef(null);
+
+  // Handle click outside to close
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (cardRef.current && !cardRef.current.contains(event.target)) {
+        setIsPinned(false);
+      }
+    }
+
+    if (isPinned) {
+      document.addEventListener("mousedown", handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [isPinned]);
+
+  const handleClick = (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    setIsPinned(!isPinned);
+  };
+
+  const shouldShow = isHovered || isPinned;
 
   return (
     <span
-      className="pronouns-trigger"
+      ref={cardRef}
+      className={`pronouns-trigger ${isPinned ? 'pinned' : ''}`}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
+      onClick={handleClick}
     >
       {children}
-      {isHovered && (
-        <div className="pronouns-card">
+      {shouldShow && (
+        <div className="pronouns-card" onClick={(e) => e.stopPropagation()}>
           <div className="pronouns-content">
             <div className="pronouns-sections-grid">
               {pronounsData.names && pronounsData.names.length > 0 && (
