@@ -155,7 +155,7 @@ const achievementSection = {
   achievementsCards: [
     {
       organization: "National Cyber League",
-      achievements: "2nd Place out of 8575",
+      achievements: "2nd Place in Forensics out of 8575",
       description:
         "I achieved second place in the Forensics category during the Spring 2025 National Cyber League competition, demonstrating exceptional skills in digital forensics.",
       image: require("./assets/images/ncl.png"),
@@ -164,7 +164,7 @@ const achievementSection = {
     },
     {
       organization: "National Cyber League",
-      achievements: "2nd Place out of 7876",
+      achievements: "2nd Place in Enumeration & Exploitation out of 7876",
       description:
         "I achieved second place in the Enumeration & Exploitation category during the Fall 2025 National Cyber League competition, showcasing strong abilities in identifying and exploiting system vulnerabilities.",
       image: require("./assets/images/ncl.png"),
