@@ -1,6 +1,7 @@
 import React from "react";
 import "./ProjectCard.scss";
 import Button from "../button/Button";
+import { SiRoblox } from "react-icons/si";
 
 export default function ProjectCard({projectInfo}) {
   return (
@@ -41,12 +42,15 @@ export default function ProjectCard({projectInfo}) {
             </div>
           )}
           <div className="project-button-div">
-            <Button
-              text="Play on Roblox"
-              className="project-play-button"
+            <a
               href={projectInfo.gameUrl}
-              newTab={true}
-            />
+              target="_blank"
+              rel="noopener noreferrer"
+              className="project-play-button main-button"
+            >
+              <SiRoblox style={{ marginRight: '0.5rem' }} />
+              PLAY
+            </a>
           </div>
         </div>
       </div>
