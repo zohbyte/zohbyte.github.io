@@ -26,7 +26,7 @@ const greeting = {
     "I am a cybersecurity enthusiast and a self-taught game developer. I love working on miscellaneous projects that force me to expand upon my skills. I also participate in the competitive side of cybersecurity, my main focus is Forensics."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1sWV6hRfurm45AMGlGNHTfor7PZanBtFj/view?usp=sharing", // Set to empty to hide the button
+    "https://drive.google.com/file/d/1lk3W_0dvNySIg6VFQ2TBglt0zGEhOyUX/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
