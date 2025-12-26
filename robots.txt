@@ -1,6 +1,6 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
 
-# Secret subdomain
+# Secret admin panel
 User-agent: *
 Allow: /secret
