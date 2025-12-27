@@ -23,7 +23,7 @@ const pronounsData = {
     { pronouns: "They/Them", preference: "okay" }
   ],
   importantDates: [
-    { name: "Birthday - November 23rd, 2001", preference: "favourite" },
+    { name: "Birthday - November 23rd", preference: "favourite" },
     { name: "Estrogen - October 17th, 2025", preference: "favourite" }
   ]
 };
