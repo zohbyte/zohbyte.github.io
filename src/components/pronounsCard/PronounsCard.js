@@ -16,13 +16,11 @@ const pronounsData = {
     { name: "zohbyte", preference: "okay" },
     { name: "Zoh", preference: "okay" },
     { name: "Zoe", preference: "okay" },
-    { name: "Zo", preference: "okay" },
-    { name: "Dead Name", preference: "avoid" }
+    { name: "Zo", preference: "okay" }
   ],
   pronouns: [
     { pronouns: "She/Her", preference: "favourite" },
-    { pronouns: "They/Them", preference: "okay" },
-    { pronouns: "He/Him", preference: "avoid" }
+    { pronouns: "They/Them", preference: "okay" }
   ],
   importantDates: [
     { name: "Birthday - November 23rd, 2001", preference: "favourite" },
@@ -160,10 +158,6 @@ export default function PronounsCard({ children }) {
               <span className="pronouns-legend-item">
                 <FaCheck className="pronouns-icon okay" />
                 <span>Acceptable</span>
-              </span>
-              <span className="pronouns-legend-item">
-                <FaTimes className="pronouns-icon avoid" />
-                <span>Not Acceptable</span>
               </span>
             </div>
           </div>
