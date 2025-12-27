@@ -19,6 +19,7 @@ export default function Greeting() {
               alt="Zoey headshot"
               src={require("../../assets/images/zoey.png")}
             ></img>
+            <a href="https://sammiportfolio.carrd.co/" target="_blank" rel="noopener noreferrer" className="image-credit">Art by sammiyammi</a>
           </div>
           <div className="greeting-text-div">
             <div>
