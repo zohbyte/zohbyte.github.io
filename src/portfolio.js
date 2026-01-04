@@ -119,8 +119,8 @@ const workExperiences = {
   experience: [
     {
       role: "Technical Lead / Owner",
-      company: "Broken Yolk Games",
-      companylogo: require("./assets/images/brokenyolk.png"),
+      company: "Zohbyte Games",
+      companylogo: require("./assets/images/zoey.png"),
       date: "July 2025 – Present",
       desc: "Oversee development across all studio projects while serving as the lead developer. Leverage deep experience with the Roblox platform and proficiency in Luau to create high-quality, scalable & engaging game experiences. Responsible for core system architecture, performance optimization, and deployment of live game environments."
     },
