@@ -3,19 +3,24 @@
 // To change portfolio colors globally go to the  _globalColor.scss file
 
 import emoji from "react-easy-emoji";
-import { 
-  SiCplusplus, 
-  SiLua, 
+import {
+  SiCplusplus,
+  SiLua,
   SiRobloxstudio,
   SiRoblox,
-  SiPython, 
+  SiPython,
   SiJavascript,
   SiGit,
   SiVmware
 } from "react-icons/si";
-import { ImTux } from "react-icons/im";
-import { FaMicroscope, FaServer, FaChalkboardTeacher, FaNetworkWired } from "react-icons/fa";
-import { TbFlagFilled } from "react-icons/tb";
+import {ImTux} from "react-icons/im";
+import {
+  FaMicroscope,
+  FaServer,
+  FaChalkboardTeacher,
+  FaNetworkWired
+} from "react-icons/fa";
+import {TbFlagFilled} from "react-icons/tb";
 
 // Summary And Greeting Section
 

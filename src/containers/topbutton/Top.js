@@ -1,6 +1,6 @@
 import React from "react";
 import "./Top.scss";
-import { IoChevronUp } from "react-icons/io5";
+import {IoChevronUp} from "react-icons/io5";
 
 export default function Top() {
   function TopEvent() {
