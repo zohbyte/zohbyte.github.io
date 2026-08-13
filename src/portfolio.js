@@ -4,22 +4,17 @@
 
 import emoji from "react-easy-emoji";
 import {
-  SiCplusplus,
+  SiSharp,
   SiLua,
   SiRobloxstudio,
-  SiRoblox,
   SiPython,
   SiJavascript,
   SiGit,
-  SiVmware
+  SiVmware,
+  SiUnity
 } from "react-icons/si";
 import {ImTux} from "react-icons/im";
-import {
-  FaMicroscope,
-  FaServer,
-  FaChalkboardTeacher,
-  FaNetworkWired
-} from "react-icons/fa";
+import {FaMicroscope, FaNetworkWired, FaVrCardboard} from "react-icons/fa";
 import {TbFlagFilled} from "react-icons/tb";
 
 // Summary And Greeting Section
@@ -28,7 +23,7 @@ const greeting = {
   username: "zohbyte",
   title: "Hi, I'm Zoey! \n (she/her)",
   subTitle: emoji(
-    "I am a cybersecurity enthusiast and a self-taught game developer. I love working on miscellaneous projects that force me to expand upon my skills. I also participate in the competitive side of cybersecurity, my main focus is Forensics."
+    "Cybersecurity engineer, software developer, and technical leader with expertise spanning reverse engineering, digital forensics, secure software development, immersive technologies, and large-scale game infrastructure. I lead the XR Immersive Labs at the University of Maine at Augusta, run an independent game studio whose titles have reached millions of plays, and compete nationally in cybersecurity — most recently ranked 1st of 7,011 competitors in the National Cyber League (Enumeration & Exploitation Category)."
   ),
   resumeLink:
     "https://drive.google.com/drive/folders/1Nj_yG_-ofaOejQhL-w6RrxoIHJJJEA34?usp=sharing", // Set to empty to hide the button
@@ -56,29 +51,32 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "Skills",
-  subTitle: "Cybersecurity • Digital Forensics • Game & Software Development",
+  subTitle:
+    "Cybersecurity Engineering • Immersive (XR) Development • Technical Leadership",
   skills: [
-    "Build scalable Roblox/Luau game systems supporting thousands of concurrent players",
-    "Perform digital forensics and incident response including memory, network, and disk analysis",
-    "Develop secure scripts, automation tools, and backend services in Lua + Python",
-    "Create simulated cyber range environments and teach advanced cybersecurity concepts",
-    "Penetration testing, network enumeration, exploitation, and CTF problem solving",
-    "IT troubleshooting, virtualization management, and student technical support"
+    "Lead XR development in Unity, C#, OpenXR, and Meta XR — turning research and faculty requirements into production-ready immersive systems",
+    "Perform digital forensics, reverse engineering, and incident response across memory, network, and disk artifacts",
+    "Architect large-scale game infrastructure and server systems supporting millions of plays under sustained concurrent traffic",
+    "Own product roadmaps, technical direction, and stakeholder relationships end to end as sole technical lead",
+    "Penetration testing, network enumeration, and exploitation at a nationally ranked competitive level",
+    "Mentor and onboard developers, including building and running an internship pipeline from the ground up"
   ],
 
   softwareSkills: [
-    {skillName: "Lua / Luau", iconComponent: <SiLua />},
     {skillName: "Python", iconComponent: <SiPython />},
-    {skillName: "JavaScript (basic)", iconComponent: <SiJavascript />},
-    {skillName: "C++ (basic)", iconComponent: <SiCplusplus />},
+    {skillName: "Lua / Luau", iconComponent: <SiLua />},
+    {skillName: "C#", iconComponent: <SiSharp />},
+    {skillName: "JavaScript", iconComponent: <SiJavascript />},
+    {skillName: "Unity", iconComponent: <SiUnity />},
     {skillName: "Roblox Development", iconComponent: <SiRobloxstudio />},
+    {skillName: "OpenXR / Meta XR", iconComponent: <FaVrCardboard />},
     {skillName: "Digital Forensics", iconComponent: <FaMicroscope />},
     {
-      skillName: "CTF / Offensive Security",
+      skillName: "Reverse Engineering",
       iconComponent: <TbFlagFilled />
     },
+    {skillName: "Network Security", iconComponent: <FaNetworkWired />},
     {skillName: "Linux", iconComponent: <ImTux />},
-    {skillName: "Wireshark", iconComponent: <FaNetworkWired />},
     {
       skillName: "Virtualization (VMware)",
       iconComponent: <SiVmware />
@@ -86,10 +84,6 @@ const skillsSection = {
     {
       skillName: "Git / Version Control",
       iconComponent: <SiGit />
-    },
-    {
-      skillName: "Teaching & Leadership",
-      iconComponent: <FaChalkboardTeacher />
     }
   ],
 
@@ -105,13 +99,13 @@ const educationInfo = {
       schoolName: "University of Maine at Augusta",
       logo: require("./assets/images/uma.png"),
       subHeader:
-        "Bachelors of Science in Cybersecurity and Computer Informations Systems",
+        "B.S. in Cybersecurity & Computer Information Systems — Honors",
       duration: "September 2022 - Present",
-      desc: "Participated in the undergraduate research, taught cybersecurity labs, and ran the CTF team.",
+      desc: "Honors student recognized on the President's List and Dean's List while working in applied cybersecurity roles across the university.",
       descBullets: [
-        "Led a CTF team to 25th in the National Cyber League (School Record)",
-        "Taught Junior / Senior level cybersecurity labs as a Freshman",
-        "Advised Maine Municipalites on cybersecurity and built live-attack demonstrations on virtual replicated infrastructures"
+        "President's List and Dean's List",
+        "Taught undergraduate and graduate cybersecurity labs through the Maine Cyber Range",
+        "Led the university CTF team to a school-record national finish"
       ]
     }
   ]
@@ -123,43 +117,64 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Technical Lead / Owner",
+      role: "XR Immersive Labs Lead",
+      company: "University of Maine at Augusta",
+      companylogo: require("./assets/images/uma.png"),
+      date: "July 2026 – Present",
+      desc: "Sole technical owner of the immersive lab's codebase and platform architecture. Author of the lab's PRD, setting scope, priorities, and technical direction for institution-wide XR initiatives from the ground up.",
+      descBullets: [
+        "Lead development in Unity, C#, Python, JavaScript, OpenXR, and Meta XR, turning faculty and research requirements into production-ready immersive systems",
+        "Serve as the primary technical point of contact for faculty, administrators, and university leadership",
+        "Built and run the lab's internship pipeline — sourcing, scoping, and onboarding student developers, with responsibility for their ongoing mentorship and growth"
+      ]
+    },
+    {
+      role: "Founder & Technical Lead",
       company: "Zohbyte Games",
       companylogo: require("./assets/images/zoey.png"),
       date: "July 2025 – Present",
-      desc: "Oversee development across all studio projects while serving as the lead developer. Leverage deep experience with the Roblox platform and proficiency in Luau to create high-quality, scalable & engaging game experiences. Responsible for core system architecture, performance optimization, and deployment of live game environments."
+      desc: "Founded and lead an independent Roblox game development studio whose titles have collectively been played by millions of players. Direct long-term technical strategy, deployment pipeline, and platform architecture for all studio titles.",
+      descBullets: [
+        "Design and maintain high-performance server and gameplay systems supporting large, sustained concurrent player bases",
+        "Build internal tools and automation that streamline development workflows across the studio",
+        "Optimize networking, scalability, and runtime performance to keep live experiences stable under heavy traffic"
+      ]
     },
     {
-      role: "Tech Hub Navigator",
+      role: "Student Tech Hub Navigator",
       company: "University of Maine at Augusta",
       companylogo: require("./assets/images/uma.png"),
       date: "Sep 2025 – Present",
-      desc: "Serve as a friendly and accessible point of contact for students seeking technical support. Provide hands-on assistance with hardware, software, and network issues within a collaborative, student-centered environment."
+      desc: "Provide front-line technical support to students, resolving hardware, software, networking, and account issues across a diverse university computing environment."
     },
     {
-      role: "Forensics",
+      role: "Forensics Specialist",
       company: "Squid Proxy Lovers",
       companylogo: require("./assets/images/spl.png"),
       date: "Jan 2025 – Present",
-      desc: "I participate in cybersecurity competitions with my team, serving as a forensics specialist. Squid Proxy Lovers is a top 25 team globally on CTFTime.",
+      desc: "Forensics specialist on a top-20 global Capture the Flag team, specializing in memory forensics, network traffic analysis, reverse engineering, and digital evidence recovery.",
       links: [
         {text: "spl.team", url: "https://spl.team"},
         {text: "CTFTime", url: "https://ctftime.org/team/222966"}
       ]
     },
     {
-      role: "Student Researcher & Lab Instructor",
+      role: "Cybersecurity Researcher & Range Operator",
       company: "Maine Cyber Range",
       companylogo: require("./assets/images/mcr.png"),
       date: "Oct 2023 – May 2025",
-      desc: "Taught advanced cybersecurity concepts to undergraduate and graduate students through hands-on labs on a virtual cyber range, facilitating experiential learning in network defense, penetration testing, and digital forensics. Collaborated with student researchers to advise local governments across Maine on strengthening their security posture, and developed real-world simulated scenarios to demonstrate the impact of effective cybersecurity practices."
+      desc: "Conducted applied cybersecurity research supporting municipal and government security initiatives, and designed and delivered hands-on instruction using the Maine Cyber Range.",
+      descBullets: [
+        "Developed realistic attack simulations and educational materials to improve organizational security awareness and defensive capabilities",
+        "Taught undergraduate and graduate students practical skills in digital forensics, network defense, and offensive security"
+      ]
     },
     {
-      role: "Player / Team Captain",
+      role: "Team Captain",
       company: "Cyber Moose",
       companylogo: require("./assets/images/cybermooselogo.png"),
-      date: "Sep 2022 – Jan 2025",
-      desc: "Originally joined as a player in the National Cyber League competitions, quickly advancing to team captain due to strong performance and leadership skills. Led the team to achieve a school-record 25th place nationally by coordinating practice sessions, developing strategies, and fostering collaboration among team members."
+      date: "Sep 2022 – Dec 2024",
+      desc: "Joined the university cybersecurity team as a competitor and was selected to lead the organization — coordinating training, mentoring members, and preparing teams for national cybersecurity competitions, including a school-record 25th-place national finish."
     }
   ]
 };
@@ -174,45 +189,63 @@ const achievementSection = {
   achievementsCards: [
     {
       organization: "National Cyber League",
-      achievements: "Forensics 2nd out of 8575",
+      achievements: "1st of 7,011 — Enumeration & Exploitation",
       description:
-        "I achieved second place in the Forensics category during the Spring 2025 National Cyber League competition, demonstrating exceptional skills in digital forensics.",
+        "Ranked 1st of 7,011 competitors nationally in the Spring 2026 National Cyber League Enumeration & Exploitation category, solving every challenge with 100% accuracy.",
+      image: require("./assets/images/ncl.png"),
+      imageAlt: "National Cyber League Logo",
+      footerLink: []
+    },
+    {
+      organization: "Wicked6",
+      achievements: "3rd Place",
+      description:
+        "Led the team to 3rd place in the 2026 Wicked6 International Attack/Defense competition, finishing behind only the U.S. and European national teams, and earned Most First Bloods for the fastest successful exploits across the competition's services.",
+      image: require("./assets/images/wicked6-light-ex-sm.png"),
+      imageAlt: "Wicked6 Cyber Games Logo",
+      footerLink: []
+    },
+    {
+      organization: "National Cyber League",
+      achievements: "2nd of 7,876 — Enumeration & Exploitation",
+      description:
+        "Ranked 2nd of 7,876 competitors in the Fall 2025 National Cyber League Enumeration & Exploitation category with 100% challenge completion.",
       image: require("./assets/images/ncl.png"),
       imageAlt: "National Cyber League Logo",
       footerLink: []
     },
     {
       organization: "National Cyber League",
-      achievements: "Enumerate & Exploit 2nd out of 7876",
+      achievements: "2nd of 8,575 — Digital Forensics",
       description:
-        "I achieved second place in the Enumeration & Exploitation category during the Fall 2025 National Cyber League competition, showcasing strong abilities in identifying and exploiting system vulnerabilities.",
+        "Ranked 2nd of 8,575 competitors in the Spring 2025 National Cyber League Digital Forensics category with 100% challenge completion.",
       image: require("./assets/images/ncl.png"),
       imageAlt: "National Cyber League Logo",
       footerLink: []
     },
     {
-      organization: "Squid Games with NPCS",
+      organization: "Zohbyte Games",
       achievements: "3+ Million Visits / 45,354 Peak DAU",
       description:
-        "Achieved over 3 million visits for NPC Squid Games, with a peak daily active user count of 45,354, demonstrating strong game development and player engagement skills.",
+        "Grew Squid Game with NPCs past 3 million visits with a peak of 45,354 daily active users, backed by scalable server architecture and live operations.",
       iconComponent: <SiRobloxstudio />,
       imageAlt: "Roblox Logo",
       footerLink: []
     },
     {
       organization: "US Cyber Games",
-      achievements: "Combine & Pipeline (Season IV & V)",
+      achievements: "Combine & Pipeline (Seasons IV–VI)",
       description:
-        "I was selected for both the combine and pipeline programs of the US Cyber Games in Seasons IV & V, highlighting my dedication and skill in the field of cybersecurity.",
+        "Selected for the US Cyber Combine and US Cyber Pipeline across Seasons IV–VI, training in offensive security, digital forensics, reverse engineering, and defensive operations.",
       image: require("./assets/images/uscg.png"),
       imageAlt: "US Cyber Games Logo",
       footerLink: []
     },
     {
       organization: "National Cyber League",
-      achievements: "Diamond Rating",
+      achievements: "Diamond Division (2023–2026)",
       description:
-        "Consistently maintained a Diamond I-III ranking in the National Cyber League competitions, showcasing advanced skills in cybersecurity and problem-solving.",
+        "Consistently ranked in the Diamond Division of the National Cyber League from 2023 through 2026, demonstrating sustained top-tier performance in competitive cybersecurity.",
       image: require("./assets/images/ncl.png"),
       imageAlt: "National Cyber League Logo",
       footerLink: []
@@ -221,10 +254,30 @@ const achievementSection = {
   display: true // Set false to hide this section, defaults to true
 };
 
+// Certifications Section
+
+const certificationSection = {
+  title: "Certifications",
+  subtitle: "",
+
+  certificationCards: [
+    {
+      organization: "GFACT",
+      achievements: "GIAC Certifications",
+      description: "Issued July 2026",
+      image: require("./assets/images/gfact.png"),
+      imageAlt: "GIAC GFACT Certification Badge",
+      footerLink: []
+    }
+    // Add more certifications here as you earn them
+  ],
+  display: true // Set false to hide this section, defaults to true
+};
+
 // Resume Section
 const resumeSection = {
   title: "Resume",
-  subtitle: "Feel free to download my resume",
+  subtitle: "Download my resume for a full overview of my experience",
 
   // Please Provide with Your Podcast embeded Link
   display: true // Set false to hide this section, defaults to true
@@ -233,7 +286,7 @@ const resumeSection = {
 const contactInfo = {
   title: emoji("Contact Me"),
   subtitle:
-    "Discord is the best contact method, for professional inquiries use email.",
+    "Open to professional opportunities and collaborations — email is the best way to reach me.",
   number: "+1 207-631-9722",
   email_address: "zoey@zohbyte.dev"
 };
@@ -243,9 +296,9 @@ const isHireable = true; // Set false if you are not looking for a job. Also isH
 // Roblox Game Section
 const robloxGameSection = {
   title: "[Alpha] Squid Game with NPCs",
-  subtitle: "My Most Popular Roblox Game",
+  subtitle: "Flagship Title from Zohbyte Games",
   description:
-    "An immersive Roblox experience featuring the classic Squid Game challenges with AI-driven NPCs. Lead development and design for this popular game that has attracted thousands of players.",
+    "An immersive Roblox experience featuring the classic Squid Game challenges with AI-driven NPCs. As founder and technical lead of Zohbyte Games, I own the architecture, performance, and live operations behind this title, which has surpassed 3 million visits.",
   gameUrl: "https://www.roblox.com/games/101390204205517/Squid-Game-with-NPCs",
   universeId: 7276011284, // Universe ID for API stats fetching
   placeId: 101390204205517, // Place ID
@@ -253,7 +306,7 @@ const robloxGameSection = {
     {
       title: "[Alpha] Squid Game with NPCs",
       description:
-        "An immersive Roblox experience featuring the classic Squid Game challenges with AI-driven NPCs. Lead development and design for this popular game that has attracted thousands of players.",
+        "An immersive Roblox experience featuring the classic Squid Game challenges with AI-driven NPCs. As founder and technical lead of Zohbyte Games, I own the architecture, performance, and live operations behind this title, which has surpassed 3 million visits.",
       thumbnail: require("./assets/images/squidthumbnail.png"),
       gameUrl:
         "https://www.roblox.com/games/101390204205517/Squid-Game-with-NPCs"
@@ -270,6 +323,7 @@ export {
   educationInfo,
   workExperiences,
   achievementSection,
+  certificationSection,
   contactInfo,
   isHireable,
   resumeSection,

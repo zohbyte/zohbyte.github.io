@@ -1,0 +1,52 @@
+@import "../../_globalColor";
+
+.certifications-heading {
+  font-size: 56px;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0 0 2rem 0;
+  color: #ffffff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.certifications-subtitle {
+  text-transform: uppercase;
+  margin: 0 0 2rem 0;
+  color: #ffffff;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+/* auto-fill (not auto-fit) keeps a single card at column width instead of stretching full-width */
+.certifications-cards-div {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  gap: 1rem 1rem;
+  align-items: stretch;
+
+  /* Cert cards have short one-line fields; drop the multi-line
+     min-heights the achievement cards use for grid alignment */
+  .card-title {
+    min-height: 0;
+    margin-bottom: 0.5rem;
+  }
+  .card-achievements {
+    min-height: 0;
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* Media Query */
+@media (max-width: 1380px) {
+  .certifications-heading {
+    font-size: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .certifications-heading {
+    font-size: 30px;
+    text-align: center;
+  }
+  .certifications-subtitle {
+    font-size: 16px;
+    line-height: normal;
+    text-align: center;
+  }
+}

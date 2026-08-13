@@ -6,6 +6,7 @@ import {
   workExperiences,
   skillsSection,
   achievementSection,
+  certificationSection,
   educationInfo
 } from "../../portfolio";
 
@@ -13,6 +14,7 @@ function Header() {
   const viewExperience = workExperiences.display;
   const viewSkills = skillsSection.display;
   const viewAchievement = achievementSection.display;
+  const viewCertifications = certificationSection.display;
   const viewEducation = educationInfo.display;
 
   return (
@@ -62,6 +64,11 @@ function Header() {
           {viewAchievement && (
             <li>
               <a href="#achievements">Achievements</a>
+            </li>
+          )}
+          {viewCertifications && (
+            <li>
+              <a href="#certifications">Certifications</a>
             </li>
           )}
           <li>

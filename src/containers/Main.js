@@ -4,6 +4,7 @@ import Greeting from "./greeting/Greeting";
 import Skills from "./skills/Skills";
 import WorkExperience from "./workExperience/WorkExperience";
 import Achievement from "./achievement/Achievement";
+import Certifications from "./certifications/Certifications";
 import Footer from "../components/footer/Footer";
 import Education from "./education/Education";
 import ScrollToTopButton from "./topbutton/Top";
@@ -15,6 +16,7 @@ import {
   educationInfo,
   workExperiences,
   achievementSection,
+  certificationSection,
   robloxGameSection
 } from "../portfolio";
 import {StyleProvider} from "../contexts/StyleContext";
@@ -37,6 +39,8 @@ const Main = () => {
           <RobloxGame />
           {achievementSection.display && <Divider />}
           <Achievement />
+          {certificationSection.display && <Divider />}
+          <Certifications />
           <Divider />
           <Profile />
           <Divider />
